@@ -46,7 +46,9 @@ Beyond our primary focus, our project also significantly contributes to the foll
     * The platform supports sustainable land use through features like **soil moisture analysis**, pest management, and crop monitoring, which collectively help **maintain healthy ecosystems** while boosting agricultural productivity.
 
 ---
+![image](https://github.com/user-attachments/assets/abb70aa8-7374-454b-bb86-04cf9c7449f9)
 
+![image](https://github.com/user-attachments/assets/b8c476d7-63ab-45cc-aa13-9a7f5ff9a974)
 
 To enhance rural education, we add interactive AI enabled smart boards
 <br/>
@@ -86,13 +88,6 @@ Our AI-driven platform is making a tangible difference across agriculture 🌱 a
 
 This platform demonstrates how advanced AI technologies can deliver practical, accessible solutions to fundamental challenges in agriculture and healthcare, with a strong focus on empowering rural and underserved populations. 🌟
 
-
-![image](https://github.com/user-attachments/assets/abb70aa8-7374-454b-bb86-04cf9c7449f9)
-
-![image](https://github.com/user-attachments/assets/b8c476d7-63ab-45cc-aa13-9a7f5ff9a974)
-
-![image](https://github.com/user-attachments/assets/685dcaf2-45fd-461c-b8f3-469c227d771a)
-
 ![image](https://github.com/user-attachments/assets/e2b38758-2f1c-4093-9715-2185d467973b)
 
 ![image](https://github.com/user-attachments/assets/affca62d-349b-4496-8313-17fcfa7ac281)
@@ -122,8 +117,10 @@ This platform demonstrates how advanced AI technologies can deliver practical, a
 ![image](https://github.com/user-attachments/assets/1177e0e8-5d69-4a6c-a38c-a2673da32ccc)
 
 
+Target Audience (that our solution's aimed at):
+-
 
-
+![image](https://github.com/user-attachments/assets/685dcaf2-45fd-461c-b8f3-469c227d771a)
 
 
 
