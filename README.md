@@ -48,6 +48,39 @@ We simulated fleet behavior in **Webots** 🖥️ with sensor-based data generat
 
 https://drive.google.com/file/d/1ii_-AuKqqPsEYX_1BzR8EIqjyMR7fqTt/view?usp=sharing
 
+Develop a smart farming assistant that provides real-time, AI-driven crop 
+management insights, handling multiple cropping pattern simulations
+
+Key Features that we handled: 
+• Analyze Soil Health & Weather using preloaded Soil Health Card datasets and 
+weather APIs to provide irrigation and sowing suggestions. 
+• AI-based pest and disease detection using sample images. 
+• Fertilizer and pesticide recommendations based on crop type and soil 
+condition. 
+• Simple interface for easy farmer access. 
+
+
+ ## Smart Agricultural Monitoring & Crop Management System using IoT, Computer Vision, YOLO, Deep Learning, Robotics, NLP, Flask, React & Capacitor (Video Demo):
+
+ 
+ 
+– Developed an integrated solution using IoT sensors, Computer Vision, and Deep Learning (YOLO) for
+ real-time crop disease detection, weed identification, and pest monitoring in TN Specific Crops such as
+ Sugarcane, Mango, Coconut & Paddy.
+– Engineered a multi-terrain robotic system combining land rover, aerial drones for pesticide spraying, and
+ an amphibious hydro vehicle fitted with custom-trained ML models & Sensors for comprehensive field
+ monitoring in Dense, Aquatic & Sparse vegetations
+– Implemented automated alarming systems that notify farmers of detected issues through SMS and mobile app
+ notifications, handled through Twilio API
+– Created a Multilingual Multimodal conversational AI Chatbot using ElevanLabs & Vapi to assist
+ farmers with crop management decisions, which is accessible in regional languages to improve agricultural
+ knowledge sharing
+– Designed a user-friendly dashboard displaying analytical insights, predictive crop health metrics, and
+recommended interventions.
+
+
+
+
 To enhance rural education, we add interactive AI enabled smart boards
 <br/>
 Check the demo video:
