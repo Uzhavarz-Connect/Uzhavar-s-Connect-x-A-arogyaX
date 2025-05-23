@@ -11,7 +11,7 @@
 
 ## Working Prototype:
 
-Demo Video (Uzhavar's Connect):
+##Demo Video (Uzhavar's Connect):
 -
 
 https://drive.google.com/file/d/13-fs1ZowVl1FC-iuFHti1M-qPBbcU8bn/view?usp=sharing 
@@ -43,7 +43,7 @@ We simulated fleet behavior in **Webots** 🖥️ with sensor-based data generat
 * **Multi-Robot Coordination:** Optimize fleet-wide task execution 🔄.
 
 
-Multiple Cropping patterns (Video demo): 
+##Multiple Cropping patterns (Video demo): 
 -
 
 https://drive.google.com/file/d/1ii_-AuKqqPsEYX_1BzR8EIqjyMR7fqTt/view?usp=sharing
