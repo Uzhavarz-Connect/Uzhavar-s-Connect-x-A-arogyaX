@@ -54,34 +54,42 @@ management insights, handling multiple cropping pattern simulations
 Key Features that we handled: 
 • Analyze Soil Health & Weather using preloaded Soil Health Card datasets and 
 weather APIs to provide irrigation and sowing suggestions. 
+<br/>
 • AI-based pest and disease detection using sample images. 
+<br/>
 • Fertilizer and pesticide recommendations based on crop type and soil 
 condition. 
+<br/>
 • Simple interface for easy farmer access. 
-
+<br/>
 
  ## Smart Agricultural Monitoring & Crop Management System using IoT, Computer Vision, YOLO, Deep Learning, Robotics, NLP, Flask, React & Capacitor (Video Demo):
 
  https://drive.google.com/file/d/16eeLnnwsqkp_wwrDC6XPq1ZOI1Wf-eMr/view
  
  
-– Developed an integrated solution using IoT sensors, Computer Vision, and Deep Learning (YOLO) for
+–  Developed an integrated solution using IoT sensors, Computer Vision, and Deep Learning (YOLO) for
  real-time crop disease detection, weed identification, and pest monitoring in TN Specific Crops such as
  Sugarcane, Mango, Coconut & Paddy.
 <br/>
-– Engineered a multi-terrain robotic system combining land rover, aerial drones for pesticide spraying, and
+<br/>
+–  Engineered a multi-terrain robotic system combining land rover, aerial drones for pesticide spraying, and
  an amphibious hydro vehicle fitted with custom-trained ML models & Sensors for comprehensive field
  monitoring in Dense, Aquatic & Sparse vegetations
  <br/>
-– Implemented automated alarming systems that notify farmers of detected issues through SMS and mobile app
+ <br/>
+–  Implemented automated alarming systems that notify farmers of detected issues through SMS and mobile app
  notifications, handled through Twilio API
  <br/>
-– Created a Multilingual Multimodal conversational AI Chatbot using ElevanLabs & Vapi to assist
+ <br/>
+–  Created a Multilingual Multimodal conversational AI Chatbot using ElevanLabs & Vapi to assist
  farmers with crop management decisions, which is accessible in regional languages to improve agricultural
  knowledge sharing
  <br/>
-– Designed a user-friendly dashboard displaying analytical insights, predictive crop health metrics, and
+ <br/>
+–  Designed a user-friendly dashboard displaying analytical insights, predictive crop health metrics, and
 recommended interventions.
+<br/>
 <br/>
 
 
