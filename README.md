@@ -9,7 +9,9 @@
 Primary SDG Alignments
 -
 <br/>
-- **Goal 12**: Zero Hunger
+
+-  **Goal 12**: Zero Hunger
+  
 <br/>
 <br/>
   -  The agricultural monitoring system directly addresses food security through crop health monitoring, pest detection, and yield optimization. The platform tackles poor yields, resource wastage, and financial losses in agriculture, which are key barriers to food security.
