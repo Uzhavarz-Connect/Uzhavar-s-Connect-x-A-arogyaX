@@ -10,20 +10,19 @@ Primary SDG Alignments
 -
 <br/>
 
--  **Goal 12**: Zero Hunger
-  
+-  ⛳**Goal 12**: Zero Hunger
 <br/>
 <br/>
   -  The agricultural monitoring system directly addresses food security through crop health monitoring, pest detection, and yield optimization. The platform tackles poor yields, resource wastage, and financial losses in agriculture, which are key barriers to food security.
 <br/>
 <br/>
-- ⛳**Goal 3**: Good Health and Well-being
+-  ⛳**Goal 3**: Good Health and Well-being
 <br/>
 <br/>
   -  The Aarogya X medical integration app addresses multiple healthcare challenges including "poor system design leading to errors and low-quality care" and "inadequate coordination for chronically ill patients". The system provides appointment scheduling, medical supply chain management, and telemedicine capabilities.
 <br/>
 <br/>
-- ⛳**Goal 6**: Clean Water and Sanitation
+-  ⛳**Goal 6**: Clean Water and Sanitation
 <br/>
 <br/>
   -  The platform includes "water level monitoring" and "AI-based smart irrigation systems" to address "inefficient water management" in agriculture. This promotes sustainable water use and conservation.
@@ -33,31 +32,31 @@ Primary SDG Alignments
 Secondary SDG Alignments
 -
 <br/>
-- ⛳**Goal 1**: No Poverty
+-  ⛳**Goal 1**: No Poverty
 <br/>
 <br/>
   -  By improving agricultural productivity and reducing "resource wastage and financial losses," the platform can help increase farmer incomes and reduce rural poverty.
 <br/>
 <br/>
-- ⛳**Goal 9**: Industry, Innovation and Infrastructure
+-  ⛳**Goal 9**: Industry, Innovation and Infrastructure
 <br/>
 <br/>
   -  The solution represents significant technological innovation with AI-driven analytics, IoT sensors (future aspects, as of now Yolo Based Deep Learning Models are running), and digital platforms that modernize both agricultural and healthcare infrastructure.
 <br/>
 <br/>
-- ⛳**Goal 10**: Reduced Inequalities
+-  ⛳**Goal 10**: Reduced Inequalities
 <br/>
 <br/>
   -  The platform specifically targets rural communities with "multilingual and multimodal chatbot for agro-based queries" and is "designed while keeping rural people in mind". This helps bridge the digital divide between urban and rural areas.
 <br/>
 <br/>
-- ⛳**Goal 12**: Responsible Consumption and Production
+-  ⛳**Goal 12**: Responsible Consumption and Production
 <br/>
 <br/>
   -  The agricultural monitoring system promotes sustainable farming practices through precision agriculture, reducing waste through better resource management and data-driven insights.
 <br/>
 <br/>
-- ⛳**Goal 15**: Life on Land
+-  ⛳**Goal 15**: Life on Land
 <br/>
 <br/>
   -  The platform supports sustainable land use through "soil moisture analysis," pest management, and crop monitoring that can help maintain healthy ecosystems while improving agricultural productivity.
