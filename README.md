@@ -20,6 +20,9 @@
 | **Integrated Agricultural System** | **Smart Agricultural Monitoring & Crop Management System using IoT, Computer Vision, YOLO, Deep Learning, Robotics, NLP, Flask, React & Capacitor (Video Demo):** <br><br> • Developed an integrated solution using IoT sensors, Computer Vision, and Deep Learning (YOLO) for real-time crop disease detection, weed identification, and pest monitoring in TN Specific Crops such as Sugarcane, Mango, Coconut & Paddy. <br><br> • Engineered a multi-terrain robotic system combining land rover, aerial drones for pesticide spraying, and an amphibious hydro vehicle fitted with custom-trained ML models & Sensors for comprehensive field monitoring in Dense, Aquatic & Sparse vegetations. <br><br> • Implemented automated alarming systems that notify farmers of detected issues through SMS and mobile app notifications, handled through Twilio API. <br><br> • Created a Multilingual Multimodal conversational AI Chatbot using ElevanLabs & Vapi to assist farmers with crop management decisions, which is accessible in regional languages to improve agricultural knowledge sharing. <br><br> • Designed a user-friendly dashboard displaying analytical insights, predictive crop health metrics, and recommended interventions. | <span style="background-color: yellow"> https://drive.google.com/file/d/16eeLnnwsqkp_wwrDC6XPq1ZOI1Wf-eMr/view </span> |
 | **Rural Education** | To enhance rural education, we add interactive AI enabled smart boards. <br><br> Check the demo video: | <span style="background-color: yellow"> https://github.com/user-attachments/assets/abafd451-3c4e-4647-86fb-741e86a1a053 </span> |
 
+<br/>
+<br/>
+<br/>
 ## Implementation Screenshots:
 
 ![image](https://github.com/user-attachments/assets/06ce43c5-1ddc-4575-93c8-cd56ad244fa6)
