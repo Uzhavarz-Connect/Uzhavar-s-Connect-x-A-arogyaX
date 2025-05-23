@@ -17,6 +17,10 @@ Demo Video (Uzhavar's Connect):
 
 ![image](https://github.com/user-attachments/assets/06ce43c5-1ddc-4575-93c8-cd56ad244fa6)
 
+![image](https://github.com/user-attachments/assets/e2b38758-2f1c-4093-9715-2185d467973b)
+
+![image](https://github.com/user-attachments/assets/affca62d-349b-4496-8313-17fcfa7ac281)
+
 ![image](https://github.com/user-attachments/assets/6cc6311b-66b8-4eea-acb2-1a62ed7727c2)
 
 ![image](https://github.com/user-attachments/assets/19381c20-56c7-4db4-b4a8-5d2d9c600cbe)
@@ -60,10 +64,6 @@ Our AI-driven platform is making a tangible difference across agriculture 🌱 a
 This platform demonstrates how advanced AI technologies can deliver practical, accessible solutions to fundamental challenges in agriculture and healthcare, with a strong focus on empowering rural and underserved populations. 🌟
 
 
-
-![image](https://github.com/user-attachments/assets/e2b38758-2f1c-4093-9715-2185d467973b)
-
-![image](https://github.com/user-attachments/assets/affca62d-349b-4496-8313-17fcfa7ac281)
 
 
 ![image](https://github.com/user-attachments/assets/c1e40bae-7e70-4997-916c-2c423d702c9a)
