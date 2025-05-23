@@ -9,6 +9,18 @@
 
 ![image](https://github.com/user-attachments/assets/b8c476d7-63ab-45cc-aa13-9a7f5ff9a974)
 
+## Working Prototype:
+
+Demo Video (Uzhavar's Connect):
+-
+
+
+![image](https://github.com/user-attachments/assets/06ce43c5-1ddc-4575-93c8-cd56ad244fa6)
+
+![image](https://github.com/user-attachments/assets/6cc6311b-66b8-4eea-acb2-1a62ed7727c2)
+
+![image](https://github.com/user-attachments/assets/19381c20-56c7-4db4-b4a8-5d2d9c600cbe)
+
 To enhance rural education, we add interactive AI enabled smart boards
 <br/>
 Check the demo video:
@@ -53,13 +65,6 @@ This platform demonstrates how advanced AI technologies can deliver practical, a
 
 ![image](https://github.com/user-attachments/assets/affca62d-349b-4496-8313-17fcfa7ac281)
 
-## Working Prototype:
-
-![image](https://github.com/user-attachments/assets/06ce43c5-1ddc-4575-93c8-cd56ad244fa6)
-
-![image](https://github.com/user-attachments/assets/6cc6311b-66b8-4eea-acb2-1a62ed7727c2)
-
-![image](https://github.com/user-attachments/assets/19381c20-56c7-4db4-b4a8-5d2d9c600cbe)
 
 ![image](https://github.com/user-attachments/assets/c1e40bae-7e70-4997-916c-2c423d702c9a)
 
@@ -69,9 +74,7 @@ This platform demonstrates how advanced AI technologies can deliver practical, a
 ## Techstack:
 ![image](https://github.com/user-attachments/assets/8f08b1ef-be97-40e0-84af-e8eb5f15aae2)
 
-##Target Audience (that our solution's aimed at):
--
-
+## Target Audience (that our solution's aimed at):
 ![image](https://github.com/user-attachments/assets/685dcaf2-45fd-461c-b8f3-469c227d771a)
 
 # 🎯 SDG Goals Alignment
