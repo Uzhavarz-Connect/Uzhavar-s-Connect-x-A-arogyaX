@@ -14,6 +14,39 @@
 Demo Video (Uzhavar's Connect):
 -
 
+https://drive.google.com/file/d/13-fs1ZowVl1FC-iuFHti1M-qPBbcU8bn/view?usp=sharing 
+
+# 🤖 SLAMbots: Autonomous Agricultural Fleet 🚜
+
+We developed a simulation for a fleet of **SLAM-enabled agricultural robots (Slambots)** to enhance farm supervision through distributed monitoring and autonomous navigation.
+
+---
+
+## 🌐 Simulation & Web App Focus
+
+We simulated fleet behavior in **Webots** 🖥️ with sensor-based data generation. Our focus was to develop a web app for a fleet of Slambots that can:
+
+* **Navigate:** Use SLAM for large farmlands 🗺️.
+* **Distributed Monitoring:** Collect & analyze soil moisture 💧, temperature 🌡️, and crop health 🌱.
+* **Adaptive Collaboration:** Share data for optimized task distribution 🤝.
+* **Fail-Safe Operations:** Handle sensor failures 🚫, communication delays ⏳, and power constraints 🔋.
+* **Remote Supervision:** Enable farmer monitoring via a web/mobile interface 📱.
+
+---
+
+## Constraints Handled 🚧
+
+* **Limited Communication:** Predictive decision-making required 📡.
+* **Low-Power Optimization:** Minimize energy consumption ⚡.
+* **Sensor Failures & Redundancy:** Handle dropouts/inaccuracies 📉.
+* **Localization Without GPS:** Alternative mapping techniques 📍.
+* **Multi-Robot Coordination:** Optimize fleet-wide task execution 🔄.
+
+
+Multiple Cropping patterns (Video demo): 
+-
+
+https://drive.google.com/file/d/1ii_-AuKqqPsEYX_1BzR8EIqjyMR7fqTt/view?usp=sharing
 
 To enhance rural education, we add interactive AI enabled smart boards
 <br/>
