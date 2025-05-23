@@ -10,13 +10,13 @@ Primary SDG Alignments
 -
 <br/>
 
--  ⛳**Goal 12**: Zero Hunger
+-  ⛳**Goal 2**: Zero Hunger
 <br/>
 <br/>
   -  The agricultural monitoring system directly addresses food security through crop health monitoring, pest detection, and yield optimization. The platform tackles poor yields, resource wastage, and financial losses in agriculture, which are key barriers to food security.
 <br/>
 <br/>
--  ⛳:Goal: :3: Good Health and Well-being
+-  ⛳**Goal 3**: Good Health and Well-being
 <br/>
 <br/>
   -  The Aarogya X medical integration app addresses multiple healthcare challenges including "poor system design leading to errors and low-quality care" and "inadequate coordination for chronically ill patients". The system provides appointment scheduling, medical supply chain management, and telemedicine capabilities.
