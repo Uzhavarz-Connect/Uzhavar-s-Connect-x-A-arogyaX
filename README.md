@@ -68,26 +68,26 @@ condition.
  https://drive.google.com/file/d/16eeLnnwsqkp_wwrDC6XPq1ZOI1Wf-eMr/view
  
  
-–  Developed an integrated solution using IoT sensors, Computer Vision, and Deep Learning (YOLO) for
+• Developed an integrated solution using IoT sensors, Computer Vision, and Deep Learning (YOLO) for
  real-time crop disease detection, weed identification, and pest monitoring in TN Specific Crops such as
  Sugarcane, Mango, Coconut & Paddy.
 <br/>
 <br/>
-–  Engineered a multi-terrain robotic system combining land rover, aerial drones for pesticide spraying, and
+• Engineered a multi-terrain robotic system combining land rover, aerial drones for pesticide spraying, and
  an amphibious hydro vehicle fitted with custom-trained ML models & Sensors for comprehensive field
  monitoring in Dense, Aquatic & Sparse vegetations
  <br/>
  <br/>
-–  Implemented automated alarming systems that notify farmers of detected issues through SMS and mobile app
+• Implemented automated alarming systems that notify farmers of detected issues through SMS and mobile app
  notifications, handled through Twilio API
  <br/>
  <br/>
-–  Created a Multilingual Multimodal conversational AI Chatbot using ElevanLabs & Vapi to assist
+• Created a Multilingual Multimodal conversational AI Chatbot using ElevanLabs & Vapi to assist
  farmers with crop management decisions, which is accessible in regional languages to improve agricultural
  knowledge sharing
  <br/>
  <br/>
-–  Designed a user-friendly dashboard displaying analytical insights, predictive crop health metrics, and
+• Designed a user-friendly dashboard displaying analytical insights, predictive crop health metrics, and
 recommended interventions.
 <br/>
 <br/>
