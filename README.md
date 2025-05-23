@@ -9,98 +9,16 @@
 
 ![image](https://github.com/user-attachments/assets/b8c476d7-63ab-45cc-aa13-9a7f5ff9a974)
 
-## Working Prototype:
-
-## Demo Video (Uzhavar's Connect):
-
-
-https://drive.google.com/file/d/13-fs1ZowVl1FC-iuFHti1M-qPBbcU8bn/view?usp=sharing 
-
-# 🤖 SLAMbots: Autonomous Agricultural Fleet 🚜
-
-We developed a simulation for a fleet of **SLAM-enabled agricultural robots (Slambots)** to enhance farm supervision through distributed monitoring and autonomous navigation.
+# 🚀 Project Demos & Explanations 🚀
 
 ---
 
-## 🌐 Simulation & Web App Focus
-
-We simulated fleet behavior in **Webots** 🖥️ with sensor-based data generation. Our focus was to develop a web app for a fleet of Slambots that can:
-
-* **Navigate:** Use SLAM for large farmlands 🗺️.
-* **Distributed Monitoring:** Collect & analyze soil moisture 💧, temperature 🌡️, and crop health 🌱.
-* **Adaptive Collaboration:** Share data for optimized task distribution 🤝.
-* **Fail-Safe Operations:** Handle sensor failures 🚫, communication delays ⏳, and power constraints 🔋.
-* **Remote Supervision:** Enable farmer monitoring via a web/mobile interface 📱.
-
----
-
-## Constraints Handled 🚧
-
-* **Limited Communication:** Predictive decision-making required 📡.
-* **Low-Power Optimization:** Minimize energy consumption ⚡.
-* **Sensor Failures & Redundancy:** Handle dropouts/inaccuracies 📉.
-* **Localization Without GPS:** Alternative mapping techniques 📍.
-* **Multi-Robot Coordination:** Optimize fleet-wide task execution 🔄.
-
-
-## Multiple Cropping patterns (Video demo): 
-
-
-https://drive.google.com/file/d/1ii_-AuKqqPsEYX_1BzR8EIqjyMR7fqTt/view?usp=sharing
-
-Develop a smart farming assistant that provides real-time, AI-driven crop 
-management insights, handling multiple cropping pattern simulations
-
-Key Features that we handled: 
-• Analyze Soil Health & Weather using preloaded Soil Health Card datasets and 
-weather APIs to provide irrigation and sowing suggestions. 
-<br/>
-• AI-based pest and disease detection using sample images. 
-<br/>
-• Fertilizer and pesticide recommendations based on crop type and soil 
-condition. 
-<br/>
-• Simple interface for easy farmer access. 
-<br/>
-
- ## Smart Agricultural Monitoring & Crop Management System using IoT, Computer Vision, YOLO, Deep Learning, Robotics, NLP, Flask, React & Capacitor (Video Demo):
-
- https://drive.google.com/file/d/16eeLnnwsqkp_wwrDC6XPq1ZOI1Wf-eMr/view
- 
- 
-• Developed an integrated solution using IoT sensors, Computer Vision, and Deep Learning (YOLO) for
- real-time crop disease detection, weed identification, and pest monitoring in TN Specific Crops such as
- Sugarcane, Mango, Coconut & Paddy.
-<br/>
-<br/>
-• Engineered a multi-terrain robotic system combining land rover, aerial drones for pesticide spraying, and
- an amphibious hydro vehicle fitted with custom-trained ML models & Sensors for comprehensive field
- monitoring in Dense, Aquatic & Sparse vegetations
- <br/>
- <br/>
-• Implemented automated alarming systems that notify farmers of detected issues through SMS and mobile app
- notifications, handled through Twilio API
- <br/>
- <br/>
-• Created a Multilingual Multimodal conversational AI Chatbot using ElevanLabs & Vapi to assist
- farmers with crop management decisions, which is accessible in regional languages to improve agricultural
- knowledge sharing
- <br/>
- <br/>
-• Designed a user-friendly dashboard displaying analytical insights, predictive crop health metrics, and
-recommended interventions.
-<br/>
-<br/>
-
-
-
-
-To enhance rural education, we add interactive AI enabled smart boards
-<br/>
-Check the demo video:
--
-
-https://github.com/user-attachments/assets/abafd451-3c4e-4647-86fb-741e86a1a053
+| Category | Title & Explanation | Demo Video |
+|---|---|---|
+| **Agriculture Robotics** | **🤖 SLAMbots: Autonomous Agricultural Fleet 🚜** <br><br> We developed a simulation for a fleet of **SLAM-enabled agricultural robots (Slambots)** to enhance farm supervision through distributed monitoring and autonomous navigation. <br><br> --- <br><br> **🌐 Simulation & Web App Focus** <br><br> We simulated fleet behavior in **Webots** 🖥️ with sensor-based data generation. <br><br> Our focus was to develop a web app for a fleet of Slambots that can: <br> * **Navigate:** Use SLAM for large farmlands 🗺️. <br> * **Distributed Monitoring:** Collect & analyze soil moisture 💧, temperature 🌡️, and crop health 🌱. <br> * **Adaptive Collaboration:** Share data for optimized task distribution 🤝. <br> * **Fail-Safe Operations:** Handle sensor failures 🚫, communication delays ⏳, and power constraints 🔋. <br> * **Remote Supervision:** Enable farmer monitoring via a web/mobile interface 📱. <br><br> --- <br><br> **Constraints Handled** 🚧 <br> * **Limited Communication:** Predictive decision-making required 📡. <br> * **Low-Power Optimization:** Minimize energy consumption ⚡. <br> * **Sensor Failures & Redundancy:** Handle dropouts/inaccuracies 📉. <br> * **Localization Without GPS:** Alternative mapping techniques 📍. <br> * **Multi-Robot Coordination:** Optimize fleet-wide task execution 🔄. | ## Working Prototype: <br><br> ## Demo Video (Uzhavar's Connect): <br><br> <span style="background-color: yellow"> https://drive.google.com/file/d/13-fs1ZowVl1FC-iuFHti1M-qPBbcU8bn/view?usp=sharing </span> |
+| **Smart Farming Assistant** | **Multiple Cropping patterns (Video demo):** <br><br> Develop a smart farming assistant that provides real-time, AI-driven crop management insights, handling multiple cropping pattern simulations. <br><br> **Key Features that we handled:** <br> • Analyze Soil Health & Weather using preloaded Soil Health Card datasets and weather APIs to provide irrigation and sowing suggestions. <br> • AI-based pest and disease detection using sample images. <br> • Fertilizer and pesticide recommendations based on crop type and soil condition. <br> • Simple interface for easy farmer access. | <span style="background-color: yellow"> https://drive.google.com/file/d/1ii_-AuKqqPsEYX_1BzR8EIqjyMR7fqTt/view?usp=sharing </span> |
+| **Integrated Agricultural System** | **Smart Agricultural Monitoring & Crop Management System using IoT, Computer Vision, YOLO, Deep Learning, Robotics, NLP, Flask, React & Capacitor (Video Demo):** <br><br> • Developed an integrated solution using IoT sensors, Computer Vision, and Deep Learning (YOLO) for real-time crop disease detection, weed identification, and pest monitoring in TN Specific Crops such as Sugarcane, Mango, Coconut & Paddy. <br><br> • Engineered a multi-terrain robotic system combining land rover, aerial drones for pesticide spraying, and an amphibious hydro vehicle fitted with custom-trained ML models & Sensors for comprehensive field monitoring in Dense, Aquatic & Sparse vegetations. <br><br> • Implemented automated alarming systems that notify farmers of detected issues through SMS and mobile app notifications, handled through Twilio API. <br><br> • Created a Multilingual Multimodal conversational AI Chatbot using ElevanLabs & Vapi to assist farmers with crop management decisions, which is accessible in regional languages to improve agricultural knowledge sharing. <br><br> • Designed a user-friendly dashboard displaying analytical insights, predictive crop health metrics, and recommended interventions. | <span style="background-color: yellow"> https://drive.google.com/file/d/16eeLnnwsqkp_wwrDC6XPq1ZOI1Wf-eMr/view </span> |
+| **Rural Education** | To enhance rural education, we add interactive AI enabled smart boards. <br><br> Check the demo video: | <span style="background-color: yellow"> https://github.com/user-attachments/assets/abafd451-3c4e-4647-86fb-741e86a1a053 </span> |
 
 ## Implementation Screenshots:
 
