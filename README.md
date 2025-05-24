@@ -8,6 +8,9 @@ https://uzhavars-connect-project-demo.netlify.app/
 🎯All the prototype links, MVPs, Demo Videos, Simulations (Solidworks, Webots, SLAM Visualization) & their explanations are provided in the above link
 
 
+Presenting to you, our project for the rural innovation sector: Uzhavar's Connect x A'arogyaX by Team GenX H4CK3RS!
+
+
 <br/>
 <br/>
 
