@@ -1,0 +1,11 @@
+streamlit==1.32.0
+geopy==2.4.1
+overpy==0.7
+networkx==3.2.1
+streamlit-js-eval==0.1.5
+folium==0.14.0
+streamlit-folium==0.15.0
+requests==2.31.0
+polyline==2.0.0
+numpy==1.26.3
+certifi==2023.11.17
