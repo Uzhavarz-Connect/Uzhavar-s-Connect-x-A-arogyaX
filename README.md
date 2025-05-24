@@ -1,141 +1,46 @@
-# Uzhavar's Connect x A'arogyaX
--
+We automated & used Jotme.io extension to handle real time translations in text and audio, for online events to remove communication barriers
 
-![image](https://github.com/user-attachments/assets/decd4165-cd35-43cf-909a-677a5753516b)
+![image](https://github.com/user-attachments/assets/26d6a35a-cf4b-4aad-8aa7-530dd6e23341)
 
-![image](https://github.com/user-attachments/assets/325b04ca-89c8-427c-bc39-b094588d4c53)
+![image](https://github.com/user-attachments/assets/32bcf1f6-c00d-4bb1-8f43-ab213373f232)
 
-![image](https://github.com/user-attachments/assets/abb70aa8-7374-454b-bb86-04cf9c7449f9)
-
-![image](https://github.com/user-attachments/assets/b8c476d7-63ab-45cc-aa13-9a7f5ff9a974)
-
-# 🚀 Project Demos & Explanations 🚀
-
----
-
-| Category | Title & Explanation | Demo Video |
-|---|---|---|
-| **Agriculture Robotics** | **🤖 SLAMbots: Autonomous Agricultural Fleet 🚜** <br><br> We developed a simulation for a fleet of **SLAM-enabled agricultural robots (Slambots)** to enhance farm supervision through distributed monitoring and autonomous navigation. <br><br> --- <br><br> **🌐 Simulation & Web App Focus** <br><br> We simulated fleet behavior in **Webots** 🖥️ with sensor-based data generation. <br><br> Our focus was to develop a web app for a fleet of Slambots that can: <br> * **Navigate:** Use SLAM for large farmlands 🗺️. <br> * **Distributed Monitoring:** Collect & analyze soil moisture 💧, temperature 🌡️, and crop health 🌱. <br> * **Adaptive Collaboration:** Share data for optimized task distribution 🤝. <br> * **Fail-Safe Operations:** Handle sensor failures 🚫, communication delays ⏳, and power constraints 🔋. <br> * **Remote Supervision:** Enable farmer monitoring via a web/mobile interface 📱. <br><br> --- <br><br> **Constraints Handled** 🚧 <br> * **Limited Communication:** Predictive decision-making required 📡. <br> * **Low-Power Optimization:** Minimize energy consumption ⚡. <br> * **Sensor Failures & Redundancy:** Handle dropouts/inaccuracies 📉. <br> * **Localization Without GPS:** Alternative mapping techniques 📍. <br> * **Multi-Robot Coordination:** Optimize fleet-wide task execution 🔄. | ## Working Prototype: <br><br> ## Demo Video (Uzhavar's Connect) ▶️: <br><br> <span style="background-color: yellow;"> https://drive.google.com/file/d/13-fs1ZowVl1FC-iuFHti1M-qPBbcU8bn/view?usp=sharing </span> |
-| **Smart Farming Assistant** | **Multiple Cropping patterns (Video demo):** <br><br> Develop a smart farming assistant that provides real-time, AI-driven crop management insights, handling multiple cropping pattern simulations. <br><br> **Key Features that we handled:** <br> • Analyze Soil Health & Weather using preloaded Soil Health Card datasets and weather APIs to provide irrigation and sowing suggestions. <br> • AI-based pest and disease detection using sample images. <br> • Fertilizer and pesticide recommendations based on crop type and soil condition. <br> • Simple interface for easy farmer access. | <span style="background-color: yellow;"> https://drive.google.com/file/d/1ii_-AuKqqPsEYX_1BzR8EIqjyMR7fqTt/view?usp=sharing </span> |
-| **Integrated Agricultural System** | **Smart Agricultural Monitoring & Crop Management System using IoT, Computer Vision, YOLO, Deep Learning, Robotics, NLP, Flask, React & Capacitor (Video Demo):** <br><br> • Developed an integrated solution using IoT sensors, Computer Vision, and Deep Learning (YOLO) for real-time crop disease detection, weed identification, and pest monitoring in TN Specific Crops such as Sugarcane, Mango, Coconut & Paddy. <br><br> • Engineered a multi-terrain robotic system combining land rover, aerial drones for pesticide spraying, and an amphibious hydro vehicle fitted with custom-trained ML models & Sensors for comprehensive field monitoring in Dense, Aquatic & Sparse vegetations. <br><br> • Implemented automated alarming systems that notify farmers of detected issues through SMS and mobile app notifications, handled through Twilio API. <br><br> • Created a Multilingual Multimodal conversational AI Chatbot using ElevanLabs & Vapi to assist farmers with crop management decisions, which is accessible in regional languages to improve agricultural knowledge sharing. <br><br> • Designed a user-friendly dashboard displaying analytical insights, predictive crop health metrics, and recommended interventions. | <span style="background-color: yellow;"> https://drive.google.com/file/d/16eeLnnwsqkp_wwrDC6XPq1ZOI1Wf-eMr/view </span> |
-| **Rural Education** | To enhance rural education, we add interactive AI enabled smart boards. <br><br> Check the demo video: | <span style="background-color: yellow;"> https://github.com/user-attachments/assets/abafd451-3c4e-4647-86fb-741e86a1a053 </span> |
-
-<br/>
-<br/>
-<br/>
-## Implementation Screenshots:
-
-![image](https://github.com/user-attachments/assets/06ce43c5-1ddc-4575-93c8-cd56ad244fa6)
-
-![image](https://github.com/user-attachments/assets/e2b38758-2f1c-4093-9715-2185d467973b)
-
-![image](https://github.com/user-attachments/assets/affca62d-349b-4496-8313-17fcfa7ac281)
-
-![image](https://github.com/user-attachments/assets/6cc6311b-66b8-4eea-acb2-1a62ed7727c2)
-
-![image](https://github.com/user-attachments/assets/19381c20-56c7-4db4-b4a8-5d2d9c600cbe)
+![image](https://github.com/user-attachments/assets/644b14f7-f750-4879-a82c-0c82d352884c)
 
 
-# 🌍 Real-World Impact: AI for Agriculture 🌱 & Healthcare 🏥
+In the regional translations, it handles only hindi language specific to India.
 
-Our AI-driven platform is making a tangible difference across agriculture 🌱 and healthcare 🏥, especially for rural communities. By leveraging advanced technology, we're tackling critical challenges and fostering sustainable development.
+![image](https://github.com/user-attachments/assets/fdca4e76-77ca-4242-9fa8-5f04a6bd4454)
 
----
-
-## Real-World Impacts: At a Glance 📊
-
-| Category      | Key Impact                             | Description                                                                                                                                              | SDGs Aligned 🎯  |
-| :------------ | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------- |
-| **Agriculture** | **Combating Waste & Losses** 📉      | Directly addresses poor yields, resource wastage, and financial losses through robust monitoring of crop health 🌿, resources 💧, and environmental conditions 🌡️. | 2, 12           |
-|               | **Early Pest & Disease Detection** 🔍  | Provides stem-level detection for pests 🐞 and diseases, enabling timely intervention to prevent crop damage and yield loss.                                | 2, 15           |
-|               | **Optimized Water Management** 💧      | Features AI-based smart irrigation and real-time soil moisture analysis 🏜️, promoting efficient and sustainable water use.                                  | 6, 12           |
-|               | **Data-Driven Farming** 🧠             | Transforms agriculture from intuition to precision with digital crop twinning 👯, multi-cropping analysis 📊, and yield prediction 📈 capabilities.                 | 9, 12           |
-|               | **Bridging Rural Tech Gap** 🤝         | Offers a multilingual 🗣️ and multimodal chatbot for agro-based queries, specifically designed for rural communities and regional translations 🌐.             | 10              |
-| **Healthcare** | **Improved System Efficiency** 🚀      | Addresses poor system design that leads to errors and low-quality care by integrating systems for better coordination 🤝 and streamlined processes.         | 3, 9            |
-|               | **Enhanced Patient Care Coordination** 🧑‍⚕️ | Tackles inadequate coordination for chronically ill patients through comprehensive appointment scheduling 🗓️, priority assessment 🚨, and integrated management. | 3               |
-|               | **Optimized Supply Chains** 📦         | Improves inefficient inventory and supply chain management with AI-powered tracking, dynamic pricing 💰, and medical supply chain simulation 🧪.               | 3, 9            |
-|               | **Transparent Healthcare Decisions** ✨  | All features implement Explainable AI (XAI), bringing clarity and trust to healthcare decision-making processes.                                       | 3               |
-|               | **Accessible Rural Healthcare** 🏡     | Includes multilingual medical OCR ✍️ for rural people to understand doctor's handwriting in prescriptions with regional translations.                        | 3, 10           |
-| **Technology** | **Cost-Effective Precision Ag** 💰     | The remote-controlled sensor vehicle 🛰️ offers portable, affordable real-time monitoring, simulating advanced tech like NDVI at minimal cost.              | 9, 10           |
-|               | **Real-Time Alert Systems** 🔔         | Both platforms provide instant notifications for critical events, from soil moisture to medical emergencies.                                           | 3, 9            |
-|               | **Innovative Elderly Care** 👵👴       | Features smart glove technology 🧤 with Twilio messaging 💬 for bedridden elderly patients to communicate basic needs to guardians.                          | 3               |
-|               | **Holistic Rural Development** 🔗      | Creates a comprehensive digital ecosystem that modernizes rural farming and provides cutting-edge medical integration.                                 | 1, 9, 10        |
-
----
-
-This platform demonstrates how advanced AI technologies can deliver practical, accessible solutions to fundamental challenges in agriculture and healthcare, with a strong focus on empowering rural and underserved populations. 🌟
+![image](https://github.com/user-attachments/assets/82f481b5-00e9-42a1-bb97-812a41d1d9f1)
 
 
+for it to handle all other indian languages, with regional translations in audio & text, we integrate sarvam ai to reduce
+communication barrier as reduced by text transcriptions (live event transcriptions in virtual events- a boom)
+
+live event transcription real time translation 
+
+[eg: india events we used sarvam ai. for multilingual capabilities in regional languages] 
+
+for speech output, we used gTTS model
+
+we can use several other TTS/STT models such as kokoro, whisper, etc.
+
+We also enhanced online note taking using askify extension with which you can parallely run down over the minutes of a meeting virtually (online/hybrid)
+
+![image](https://github.com/user-attachments/assets/58b6b9e4-f97f-4a65-84bb-fcbe47e6d46d)
 
 
-![image](https://github.com/user-attachments/assets/c1e40bae-7e70-4997-916c-2c423d702c9a)
+![image](https://github.com/user-attachments/assets/ddd622d9-1321-4dfe-b1c0-f6ee1d5aa50d)
 
-![image](https://github.com/user-attachments/assets/33b4937f-afa5-4c9c-85de-071631e74cc6)
+you can view your previosu saved notes, handle login authentication services
 
-
-## Techstack:
-![image](https://github.com/user-attachments/assets/8f08b1ef-be97-40e0-84af-e8eb5f15aae2)
-
-## Target Audience (that our solution's aimed at):
-![image](https://github.com/user-attachments/assets/685dcaf2-45fd-461c-b8f3-469c227d771a)
-
-# 🎯 SDG Goals Alignment
-
-This project is designed with a strong commitment to contributing to the United Nations Sustainable Development Goals (SDGs). Our solutions directly address several critical global challenges.
-
----
-
-## Primary SDG Alignments
-
-Our core functionalities are primarily aligned with these key SDGs:
-
-* **⛳ Goal 2: Zero Hunger**
-    * The agricultural monitoring system directly tackles food security by offering **crop health monitoring**, **pest detection**, and **yield optimization**. By addressing poor yields, resource wastage, and financial losses in agriculture, the platform directly works towards achieving food security.
-
-* **⛳ Goal 3: Good Health and Well-being**
-    * The Aarogya X medical integration app is engineered to overcome healthcare challenges such as "poor system design leading to errors and low-quality care" and "inadequate coordination for chronically ill patients." It provides essential features like **appointment scheduling**, **medical supply chain management**, and **telemedicine capabilities**.
-
-* **⛳ Goal 6: Clean Water and Sanitation**
-    * The platform incorporates **water level monitoring** and **AI-based smart irrigation systems** to combat "inefficient water management" in agriculture. This functionality actively promotes sustainable water use and conservation.
-
----
-
-## Secondary SDG Alignments
-
-Beyond our primary focus, our project also significantly contributes to the following SDGs:
-
-* **⛳ Goal 1: No Poverty**
-    * By enhancing agricultural productivity and minimizing "resource wastage and financial losses," the platform plays a vital role in **increasing farmer incomes and reducing rural poverty**.
-
-* **⛳ Goal 9: Industry, Innovation and Infrastructure**
-    * This solution represents a substantial technological leap, leveraging **AI-driven analytics**, **IoT sensors** (future implementation, currently utilizing YOLO-based Deep Learning Models), and **digital platforms** to modernize both agricultural and healthcare infrastructure.
-
-* **⛳ Goal 10: Reduced Inequalities**
-    * The platform specifically targets rural communities, offering a **multilingual and multimodal chatbot for agro-based queries** and designed with the needs of rural populations in mind. This helps to **bridge the digital divide** between urban and rural areas.
-
-* **⛳ Goal 12: Responsible Consumption and Production**
-    * The agricultural monitoring system advocates for **sustainable farming practices** through precision agriculture, leading to reduced waste via improved resource management and data-driven insights.
-
-* **⛳ Goal 15: Life on Land**
-    * The platform supports sustainable land use through features like **soil moisture analysis**, pest management, and crop monitoring, which collectively help **maintain healthy ecosystems** while boosting agricultural productivity.
-
----
-
-## 🧠 Team & Contributors
--
-
-| Name               | Role                                                                                                                      |
-|------------------- |---------------------------------------------------------------------------------------------------------------------------|
-| Jayadithya G       | Project Lead, Backend, AI Model & research proof, Mechanical Design & Simulation, Computer Vision, Vision Language Models |                                 
-| Rex Joson Deva     | UI/UX and Frontend, presentation, AI Agent Automation, wireframing, Deep Learning, NLTK, NLP, Sentence transformers, OCR  | 
-
----
-
-![image](https://github.com/user-attachments/assets/1177e0e8-5d69-4a6c-a38c-a2673da32ccc)
+![image](https://github.com/user-attachments/assets/1789a566-ecd4-493d-a6b9-3662788961da)
 
 
+and automatically it can take notes (minutes of meeting) from real time virtual gmeets, using audio to text transcriptions when speaker is speaking
 
 
+We also deployed smart whiteboards, as of now integrating math & physics features using APIs of math opennotes, wolfram alpha, groq
 
-[Build a digital platform to monitor crop health, water levels, and nutrients, with features like pest .pdf](https://github.com/user-attachments/files/20408963/Build.a.digital.platform.to.monitor.crop.health.water.levels.and.nutrients.with.features.like.pest.pdf)
+we've the video demo below
 
