@@ -251,8 +251,6 @@ We've prototyped a blockchain based crowdfunding Dapp to facilitate donation of 
 ![image](https://github.com/user-attachments/assets/c05cd101-ef72-4c1b-bc66-0e2afb14102b)
 
 
-![image](https://github.com/user-attachments/assets/f50587dd-908c-41d3-9a41-28ffc5b02e14)
-
 <br/>
 we did some small work there: 
 -
