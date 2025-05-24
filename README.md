@@ -203,6 +203,11 @@ Pest action
 <br/>
 ![image](https://github.com/user-attachments/assets/37e759b6-1d7b-4167-8fae-a0614bc0728b)
 
+
+We also created a public peer to peer forum network for farmers to communicate within each other, to an other farmer seeking agritech queries than an AI solving the problem, even that provision is included in our system.
+<br/>
+<br/>
+
 multiple cropping patterns, crop yield comparisons, advantages & disadvantages
 <br/>
 <br/>
