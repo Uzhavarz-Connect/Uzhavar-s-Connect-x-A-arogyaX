@@ -12,6 +12,13 @@ https://uzhavars-connect-project-demo.netlify.app/
 
 ![image](https://github.com/user-attachments/assets/56691a76-458b-4c4b-aab4-3f7119b13625)
 
+## Uzhavar's Connect
+
+![image](https://github.com/user-attachments/assets/1ba3a3af-63b6-449b-a611-ae8e3eea5c2f)
+
+![image](https://github.com/user-attachments/assets/3c0b1f69-7170-4f3d-89f7-42604fc8b5f1)
+
+
 # 🎯 SDG Goals Alignment
 
 This project is designed with a strong commitment to contributing to the United Nations Sustainable Development Goals (SDGs). Our solutions directly address several critical global challenges.
@@ -80,3 +87,170 @@ Our AI-driven platform is making a tangible difference across agriculture 🌱 a
 ---
 
 This platform demonstrates how advanced AI technologies can deliver practical, accessible solutions to fundamental challenges in agriculture and healthcare, with a strong focus on empowering rural and underserved populations. 🌟
+
+## A'arogyaX
+
+![image](https://github.com/user-attachments/assets/ba4cacb0-8876-4bc9-b63d-bb73decb3757)
+
+![image](https://github.com/user-attachments/assets/822c2784-0990-4440-8f6b-d86d3ae87d3f)
+
+## Implementation
+
+![image](https://github.com/user-attachments/assets/d988511a-3211-4d89-9c39-8f5f585d7655)
+
+![image](https://github.com/user-attachments/assets/71902bec-cf35-43c0-9574-86355a09a12a)
+
+## Computer Vision Prototype Screenshots (Dataset created with self annotation on RoboFlow, achieving an accuracy of 98%)
+
+![image](https://github.com/user-attachments/assets/ddb2176d-8796-4623-857d-a2f425ae8518)
+
+![image](https://github.com/user-attachments/assets/8314068a-be08-4d52-9629-df4410f1fd41) 
+
+(https://colab.research.google.com/drive/1GeSfFSAhY1nRbtyw9RwzRfoibX0S7DuG?usp=sharing)
+
+<br/>
+
+## Effective path planning graph traversal algorithms for optimization (shortest path, better crop yield, profitable return on investment)
+
+We actively analysed several graph algorithms and compared them all for better yield in each scenario, ranging from A*, Dijkstra, BFS, DFS, Prims, Kruskal, MST, Bellman Ford, Floyd Warshall, RRT, RRT*, Ford Fulkerson, Flow algorithms
+
+![image](https://github.com/user-attachments/assets/f2a21853-5a6d-4601-a122-fecdb5ad6f97)
+
+![image](https://github.com/user-attachments/assets/32394f88-8b48-4be0-bd7a-8b5e2d93a4ac)
+
+![image](https://github.com/user-attachments/assets/13952baf-96f1-410c-af9b-b0a390d7b12f)
+
+![image](https://github.com/user-attachments/assets/7393bb7b-f864-42eb-953b-e4ddb987bbba)
+
+(https://colab.research.google.com/drive/1DQKrrcs56zmkRK0Dd6gD3AoPBZRWY_su?usp=sharing)
+
+<br/>
+
+We also ran several RL Based pipeline heirarchial Span of swarm algorithms in population density analysis in diversying farm yield autonomously
+
+![image](https://github.com/user-attachments/assets/86f363af-a2b5-4062-b143-112332f901fd)
+
+![image](https://github.com/user-attachments/assets/36c54694-5cc5-4796-a9ea-b3296fe438f3)
+
+## RL environment simulated autonomously
+
+![image](https://github.com/user-attachments/assets/b62d2822-2237-4c78-90b3-0c0a4c3cb928)
+
+We also deployed smart irrigation systems, digital twins to continuously monitor crop health & pest action
+<br/>
+
+We also simulated a fleet of pesticide spraying drones & refill mechanism of the fuel deliverables (food, in case of disaster/emergency) using backtracking algorithms
+
+![image](https://github.com/user-attachments/assets/162a2b6d-7072-4958-aa20-92c6e9e948d7)
+
+![image](https://github.com/user-attachments/assets/4a3062bf-35ed-4ce8-8af9-07307242e980)
+
+![image](https://github.com/user-attachments/assets/cef5c9b0-65de-4878-9e5b-ff28be9ca284)
+
+Pest action
+<br/>
+![image](https://github.com/user-attachments/assets/37e759b6-1d7b-4167-8fae-a0614bc0728b)
+
+multiple cropping patterns, crop yield comparisons, advantages & disadvantages
+<br/>
+
+![image](https://github.com/user-attachments/assets/a6be84a0-13b2-4bae-8be2-e9d0483e0086)
+
+![image](https://github.com/user-attachments/assets/d2e4a4c7-0110-4893-9da3-fed3c78ce1e7)
+
+
+
+We also leveraged Multilingual Multimodal Kissan AI, the ai chatbot developed by govt of India, in assosciation with AIkosha platform to clarify any queries related to agritech, from soil temperature levels, humidty, wind pressure, pH, climatic requirements, moisture content, etc.
+
+![image](https://github.com/user-attachments/assets/13b84b5b-6dde-4a6b-ac78-1f6fada8b7b8)
+
+![image](https://github.com/user-attachments/assets/ee97e151-83c1-44d8-b3f0-138a9e137f57)
+
+
+
+## Techstack
+
+![image](https://github.com/user-attachments/assets/4e0020ba-b4f3-4b1a-8f69-e551b5b3e606)
+
+## Future Aspect
+
+We designed a smart glove that's capable to detecting gestures using flex sensors, for the elderly & paralysed people
+
+![image](https://github.com/user-attachments/assets/14a2b7f2-aeba-4b47-8359-d9dd092688fd)
+
+We've prototyped a blockchain based crowdfunding Dapp to facilitate donation of blood, money, clothes, food, tablets, etc. to those who suffer in rural areas out of poverty, we also aim to create employment opportunities, as the system carries potential to deliver remote jobs to the unemployed (eg: delivery work of medicines to a particular location) and by going onchain, you personal confidential data is kept secure & private, with no unauthorized access, we can deploy a federated model with multifactor authentication
+
+![image](https://github.com/user-attachments/assets/f50587dd-908c-41d3-9a41-28ffc5b02e14)
+
+<br/>
+we did some small work there: 
+-
+https://drive.google.com/file/d/1t-ioAP83gklrD33l2tztNgLM3yFFcqRX/view?usp=sharing
+
+<br/>
+competitor analysis performed (literature study): Zepto, dunzo, pharmeasy, swiggy, zomato, ola, uber
+<br/>
+
+We simulated a QR based ticketing system for rural people, where in you need to update your personal records, you aadhar details, credit card details, all of it in a single qr, safeguarded by multi factor authentication, biometric securities, federated modelling, and once a person flashes a qr, it proves his collateral guarantees of a property against a personal loan, so immediately queues in receptions could be handled, and ticketing/ reception form filling becomes easier, making it a smarter approach in healthcare
+<br/>
+biometric qr based ticketing:
+-
+
+https://id-preview--3479a190-0375-4fc7-9d2d-30b1c43a6319.lovable.app/ (simulation)
+
+![image](https://github.com/user-attachments/assets/da9f5fc3-c237-4430-b665-7f4b85441a31)
+
+we also deploy scheduling algorithms to handle deadlock, starvation situation, FCFS, SJF, Priority encoding, Page replacement, etc. and we optimize the gantt chart
+
+![image](https://github.com/user-attachments/assets/a667354b-6f9b-465a-96b7-c1571531317f)
+
+
+<br/>
+
+Creating a disaster resilient supply chain, that's capable of handling effective inventory management of medicine stock
+<br/>
+
+Bridge the era of digital education, virtual meetings, making a rural city smart, by bridging transmission of messages & real time UDP based firecloud messenger, we deployed many ways to urbanize a rural city, thus trialblazing an attempt to make it smart
+
+<br>
+
+## Innovation
+
+The best innovation that we handled off, is bringing in multilinguality & multimodality, as farmers can't understand all the languages, and to make the services accessible to them too, our opensource system leverages sarvam ai, the most advanced LLM trained for indic languages
+
+<br/>
+
+![image](https://github.com/user-attachments/assets/fc7061e0-d7d9-48c9-a8f6-e4be86dea57e)
+
+## Business Model & Target Audience
+
+![image](https://github.com/user-attachments/assets/8969ce17-c2bc-4ce9-ba0a-d6793d063b22)
+
+![image](https://github.com/user-attachments/assets/eef04976-8b64-4596-adfc-1540456bdb77)
+
+### Team & Contributors
+
+| Name            | Role                                                                 |
+|-----------------|----------------------------------------------------------------------|
+| Jayadithya G    | Team Lead, ML/DL Developer, Backend, NLP, CV, Agents workflows, Mechanical design & simulation |
+| Rex Joson Deva  | APIs, NLTK, Frontend UI/UX, Presentation, research proof & Literature study |
+
+![image](https://github.com/user-attachments/assets/80e9695a-0066-423f-9d6f-105dbae013eb)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
