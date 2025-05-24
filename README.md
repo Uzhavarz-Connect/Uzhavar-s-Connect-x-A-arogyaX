@@ -12,9 +12,7 @@ https://uzhavars-connect-project-demo.netlify.app/
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
+
 
 ![image](https://github.com/user-attachments/assets/d0d8529e-5bdb-4e60-83fe-ee36f4d61633)
 
