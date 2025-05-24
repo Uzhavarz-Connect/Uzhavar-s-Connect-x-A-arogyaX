@@ -1,0 +1,132 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 100 35% 98%;
+    --foreground: 142 30% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 142 30% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 142 30% 10%;
+
+    --primary: 142 76% 36%;
+    --primary-foreground: 355 100% 100%;
+
+    --secondary: 142 30% 96%;
+    --secondary-foreground: 142 30% 10%;
+
+    --muted: 142 30% 96%;
+    --muted-foreground: 142 24% 40%;
+
+    --accent: 34 100% 50%;
+    --accent-foreground: 142 30% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 142 30% 88%;
+    --input: 142 30% 88%;
+    --ring: 142 76% 36%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 100 35% 98%;
+    --sidebar-foreground: 142 30% 10%;
+    --sidebar-primary: 142 76% 36%;
+    --sidebar-primary-foreground: 355 100% 100%;
+    --sidebar-accent: 142 24% 95%;
+    --sidebar-accent-foreground: 142 30% 10%;
+    --sidebar-border: 142 30% 88%;
+    --sidebar-ring: 142 76% 36%;
+  }
+
+  .dark {
+    --background: 142 30% 10%;
+    --foreground: 355 100% 98%;
+
+    --card: 142 30% 12%;
+    --card-foreground: 355 100% 98%;
+
+    --popover: 142 30% 12%;
+    --popover-foreground: 355 100% 98%;
+
+    --primary: 142 76% 36%;
+    --primary-foreground: 355 100% 100%;
+
+    --secondary: 142 30% 24%;
+    --secondary-foreground: 355 100% 98%;
+
+    --muted: 142 30% 24%;
+    --muted-foreground: 142 24% 64%;
+
+    --accent: 34 100% 50%;
+    --accent-foreground: 142 30% 10%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 355 100% 98%;
+
+    --border: 142 30% 24%;
+    --input: 142 30% 24%;
+    --ring: 142 76% 46%;
+
+    --sidebar-background: 142 30% 12%;
+    --sidebar-foreground: 355 100% 98%;
+    --sidebar-primary: 142 76% 36%;
+    --sidebar-primary-foreground: 355 100% 100%;
+    --sidebar-accent: 142 30% 20%;
+    --sidebar-accent-foreground: 355 100% 98%;
+    --sidebar-border: 142 30% 24%;
+    --sidebar-ring: 142 76% 46%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.map-container {
+  background-image: 
+    linear-gradient(rgba(200, 220, 200, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200, 220, 200, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.robot-marker {
+  transition: all 0.5s ease-in-out;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.sensor-badge {
+  transition: all 0.3s ease;
+}
+.sensor-badge:hover {
+  transform: translateY(-2px);
+}
+
+.battery-low {
+  @apply text-agri-red font-medium animate-pulse;
+}
+
+.battery-medium {
+  @apply text-agri-orange font-medium;
+}
+
+.battery-high {
+  @apply text-agri-green font-medium;
+}
