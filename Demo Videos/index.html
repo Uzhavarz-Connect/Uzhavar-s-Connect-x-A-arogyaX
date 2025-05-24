@@ -1,0 +1,1145 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Project Demos & Explanations 🚀</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 1rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            margin: 2rem 0;
+            padding: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            animation: slideInUp 0.8s ease forwards;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        .project-card:nth-child(2) { animation-delay: 0.2s; }
+        .project-card:nth-child(3) { animation-delay: 0.4s; }
+        .project-card:nth-child(4) { animation-delay: 0.6s; }
+        .project-card:nth-child(5) { animation-delay: 0.8s; }
+
+        @keyframes slideInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .project-card:hover::before {
+            left: 100%;
+        }
+
+        .category-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .project-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .project-description {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .project-description ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        .project-description li {
+            margin: 0.5rem 0;
+        }
+
+        .demo-section {
+            position: relative;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 15px;
+            padding: 1.5rem;
+            color: white;
+            text-align: center;
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 0 20px rgba(102, 126, 234, 0.5); }
+            to { box-shadow: 0 0 40px rgba(102, 126, 234, 0.8); }
+        }
+
+        .avatar-container {
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            width: 80px;
+            height: 80px;
+            z-index: 10;
+        }
+
+        .avatar {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            animation: spin 4s linear infinite, bob 2s ease-in-out infinite;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 3px solid white;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes bob {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(180deg); }
+        }
+
+        .demo-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #333;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200px 0; }
+            100% { background-position: 200px 0; }
+        }
+
+        .demo-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+            transition: left 0.5s;
+        }
+
+        .demo-link:hover::before {
+            left: 100%;
+        }
+
+        .demo-link:hover {
+            transform: scale(1.1) rotateZ(2deg);
+            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.6);
+        }
+
+        .floating-icons {
+            position: fixed;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .floating-icon {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.1;
+            animation: floatRandom 20s linear infinite;
+        }
+
+        @keyframes floatRandom {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-100px) rotate(360deg); }
+        }
+
+        .separator {
+            height: 3px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            margin: 2rem 0;
+            border-radius: 2px;
+            animation: expand 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes expand {
+            from { transform: scaleX(0.8); }
+            to { transform: scaleX(1); }
+        }
+
+        @media (max-width: 768px) {
+            .project-content {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-bg"></div>
+    
+    <div class="floating-icons">
+        <div class="floating-icon" style="left: 10%; animation-delay: 0s;">🚀</div>
+        <div class="floating-icon" style="left: 20%; animation-delay: 2s;">🤖</div>
+        <div class="floating-icon" style="left: 30%; animation-delay: 4s;">🌱</div>
+        <div class="floating-icon" style="left: 40%; animation-delay: 6s;">📱</div>
+        <div class="floating-icon" style="left: 50%; animation-delay: 8s;">🔬</div>
+        <div class="floating-icon" style="left: 60%; animation-delay: 10s;">⚡</div>
+        <div class="floating-icon" style="left: 70%; animation-delay: 12s;">🎯</div>
+        <div class="floating-icon" style="left: 80%; animation-delay: 14s;">💡</div>
+        <div class="floating-icon" style="left: 90%; animation-delay: 16s;">🎨</div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Project Demos & Explanations 🚀</h1>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="project-card">
+            <div class="category-badge">Agriculture Robotics</div>
+            <div class="project-content">
+                <div class="project-description">
+                    <div class="project-title">🤖 SLAMbots: Autonomous Agricultural Fleet 🚜</div>
+                    
+                    <p>We developed a simulation for a fleet of <strong>SLAM-enabled agricultural robots (Slambots)</strong> to enhance farm supervision through distributed monitoring and autonomous navigation.</p>
+                    
+                    <div class="separator"></div>
+                    
+                    <h3>🌐 Simulation & Web App Focus</h3>
+                    
+                    <p>We simulated fleet behavior in <strong>Webots</strong> 🖥️ with sensor-based data generation.</p>
+                    
+                    <p>Our focus was to develop a web app for a fleet of Slambots that can:</p>
+                    <ul>
+                        <li><strong>Navigate:</strong> Use SLAM for large farmlands 🗺️.</li>
+                        <li><strong>Distributed Monitoring:</strong> Collect & analyze soil moisture 💧, temperature 🌡️, and crop health 🌱.</li>
+                        <li><strong>Adaptive Collaboration:</strong> Share data for optimized task distribution 🤝.</li>
+                        <li><strong>Fail-Safe Operations:</strong> Handle sensor failures 🚫, communication delays ⏳, and power constraints 🔋.</li>
+                        <li><strong>Remote Supervision:</strong> Enable farmer monitoring via a web/mobile interface 📱.</li>
+                    </ul>
+                    
+                    <div class="separator"></div>
+                    
+                    <h3>Constraints Handled 🚧</h3>
+                    <ul>
+                        <li><strong>Limited Communication:</strong> Predictive decision-making required 📡.</li>
+                        <li><strong>Low-Power Optimization:</strong> Minimize energy consumption ⚡.</li>
+                        <li><strong>Sensor Failures & Redundancy:</strong> Handle dropouts/inaccuracies 📉.</li>
+                        <li><strong>Localization Without GPS:</strong> Alternative mapping techniques 📍.</li>
+                        <li><strong>Multi-Robot Coordination:</strong> Optimize fleet-wide task execution 🔄.</li>
+                    </ul>
+                </div>
+                <div class="demo-section">
+                    <div class="avatar-container">
+                        <div class="avatar">🎬</div>
+                    </div>
+                    <h3>Working Prototype:</h3>
+                    <h3>Demo Video (Uzhavar's Connect) ▶️:</h3>
+                    <a href="https://drive.google.com/file/d/13-fs1ZowVl1FC-iuFHti1M-qPBbcU8bn/view?usp=sharing" class="demo-link" target="_blank">
+                        🎥 Watch Demo Video
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="category-badge">Smart Farming Assistant</div>
+            <div class="project-content">
+                <div class="project-description">
+                    <div class="project-title">Multiple Cropping patterns (Video demo):</div>
+                    
+                    <p>Develop a smart farming assistant that provides real-time, AI-driven crop management insights, handling multiple cropping pattern simulations.</p>
+                    
+                    <h3>Key Features that we handled:</h3>
+                    <ul>
+                        <li>Analyze Soil Health & Weather using preloaded Soil Health Card datasets and weather APIs to provide irrigation and sowing suggestions.</li>
+                        <li>AI-based pest and disease detection using sample images.</li>
+                        <li>Fertilizer and pesticide recommendations based on crop type and soil condition.</li>
+                        <li>Simple interface for easy farmer access.</li>
+                    </ul>
+                </div>
+                <div class="demo-section">
+                    <div class="avatar-container">
+                        <div class="avatar">🌾</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1ii_-AuKqqPsEYX_1BzR8EIqjyMR7fqTt/view?usp=sharing" class="demo-link" target="_blank">
+                        🎥 Watch Demo Video
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="category-badge">Integrated Agricultural System</div>
+            <div class="project-content">
+                <div class="project-description">
+                    <div class="project-title">Smart Agricultural Monitoring & Crop Management System using IoT, Computer Vision, YOLO, Deep Learning, Robotics, NLP, Flask, React & Capacitor (Video Demo):</div>
+                    
+                    <p>• Developed an integrated solution using IoT sensors, Computer Vision, and Deep Learning (YOLO) for real-time crop disease detection, weed identification, and pest monitoring in TN Specific Crops such as Sugarcane, Mango, Coconut & Paddy.</p>
+                    
+                    <p>• Engineered a multi-terrain robotic system combining land rover, aerial drones for pesticide spraying, and an amphibious hydro vehicle fitted with custom-trained ML models & Sensors for comprehensive field monitoring in Dense, Aquatic & Sparse vegetations.</p>
+                    
+                    <p>• Implemented automated alarming systems that notify farmers of detected issues through SMS and mobile app notifications, handled through Twilio API.</p>
+                    
+                    <p>• Created a Multilingual Multimodal conversational AI Chatbot using ElevanLabs & Vapi to assist farmers with crop management decisions, which is accessible in regional languages to improve agricultural knowledge sharing.</p>
+                    
+                    <p>• Designed a user-friendly dashboard displaying analytical insights, predictive crop health metrics, and recommended interventions.</p>
+                </div>
+                <div class="demo-section">
+                    <div class="avatar-container">
+                        <div class="avatar">🔬</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/16eeLnnwsqkp_wwrDC6XPq1ZOI1Wf-eMr/view" class="demo-link" target="_blank">
+                        🎥 Watch Demo Video
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="category-badge">Rural Education</div>
+            <div class="project-content">
+                <div class="project-description">
+                    <div class="project-title">AI-Enhanced Smart Boards for Rural Education</div>
+                    
+                    <p>To enhance rural education, we add interactive AI enabled smart boards.</p>
+                    
+                    <p>Check the demo video:</p>
+                </div>
+                <div class="demo-section">
+                    <div class="avatar-container">
+                        <div class="avatar">📚</div>
+                    </div>
+                    <a href="https://github.com/user-attachments/assets/abafd451-3c4e-4647-86fb-741e86a1a053" class="demo-link" target="_blank">
+                        🎥 Watch Demo Video
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add dynamic interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate cards on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                    }
+                });
+            });
+
+            // Add more floating icons randomly
+            function createFloatingIcon() {
+                const icons = ['🚀', '🤖', '🌱', '📱', '🔬', '⚡', '🎯', '💡', '🎨', '🌟', '⭐', '💫'];
+                const icon = document.createElement('div');
+                icon.className = 'floating-icon';
+                icon.textContent = icons[Math.floor(Math.random() * icons.length)];
+                icon.style.left = Math.random() * 100 + '%';
+                icon.style.animationDuration = (Math.random() * 10 + 15) + 's';
+                icon.style.animationDelay = Math.random() * 5 + 's';
+                
+                document.querySelector('.floating-icons').appendChild(icon);
+                
+                setTimeout(() => {
+                    icon.remove();
+                }, 25000);
+            }
+
+            // Create floating icons periodically
+            setInterval(createFloatingIcon, 3000);
+
+            // Add hover effects to demo links
+            const demoLinks = document.querySelectorAll('.demo-link');
+            demoLinks.forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.1) rotateZ(' + (Math.random() * 10 - 5) + 'deg)';
+                });
+                
+                link.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1) rotateZ(0deg)';
+                });
+            });
+
+            // Add parallax effect to avatars
+            document.addEventListener('mousemove', function(e) {
+                const avatars = document.querySelectorAll('.avatar');
+                const x = e.clientX / window.innerWidth;
+                const y = e.clientY / window.innerHeight;
+                
+                avatars.forEach(avatar => {
+                    const moveX = (x - 0.5) * 20;
+                    const moveY = (y - 0.5) * 20;
+                    avatar.style.transform = `translate(${moveX}px, ${moveY}px) rotate(${moveX}deg)`;
+                });
+            });
+        });
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Project Demos & Explanations - Rural Innovation Track 🚀</title>
+     <title>Team GenX H4CK3RS!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 1rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            margin: 2rem 0;
+            padding: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            animation: slideInUp 0.8s ease forwards;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        .project-card:nth-child(2) { animation-delay: 0.2s; }
+        .project-card:nth-child(3) { animation-delay: 0.4s; }
+        .project-card:nth-child(4) { animation-delay: 0.6s; }
+        .project-card:nth-child(5) { animation-delay: 0.8s; }
+        .project-card:nth-child(6) { animation-delay: 1.0s; }
+        .project-card:nth-child(7) { animation-delay: 1.2s; }
+        .project-card:nth-child(8) { animation-delay: 1.4s; }
+
+        @keyframes slideInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .project-card:hover::before {
+            left: 100%;
+        }
+
+        .category-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .project-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .project-description {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .project-description ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        .project-description li {
+            margin: 0.5rem 0;
+        }
+
+        .demo-section {
+            position: relative;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 15px;
+            padding: 1.5rem;
+            color: white;
+            text-align: center;
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 0 20px rgba(102, 126, 234, 0.5); }
+            to { box-shadow: 0 0 40px rgba(102, 126, 234, 0.8); }
+        }
+
+        .avatar-container {
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            width: 80px;
+            height: 80px;
+            z-index: 10;
+        }
+
+        .avatar {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            animation: spin 4s linear infinite, bob 2s ease-in-out infinite;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 3px solid white;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes bob {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(180deg); }
+        }
+
+        .demo-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #333;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+            animation: shimmer 2s infinite;
+        }
+
+        .mvp-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #4ecdc4, #44a08d);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4);
+            position: relative;
+            overflow: hidden;
+            font-size: 0.9rem;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200px 0; }
+            100% { background-position: 200px 0; }
+        }
+
+        .demo-link::before, .mvp-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+            transition: left 0.5s;
+        }
+
+        .demo-link:hover::before, .mvp-link:hover::before {
+            left: 100%;
+        }
+
+        .demo-link:hover {
+            transform: scale(1.1) rotateZ(2deg);
+            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.6);
+        }
+
+        .mvp-link:hover {
+            transform: scale(1.05) rotateZ(1deg);
+            box-shadow: 0 8px 20px rgba(78, 205, 196, 0.6);
+        }
+
+        .floating-icons {
+            position: fixed;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .floating-icon {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.1;
+            animation: floatRandom 20s linear infinite;
+        }
+
+        @keyframes floatRandom {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-100px) rotate(360deg); }
+        }
+
+        .separator {
+            height: 3px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            margin: 2rem 0;
+            border-radius: 2px;
+            animation: expand 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes expand {
+            from { transform: scaleX(0.8); }
+            to { transform: scaleX(1); }
+        }
+
+        @media (max-width: 768px) {
+            .project-content {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-bg"></div>
+    
+    <div class="floating-icons">
+        <div class="floating-icon" style="left: 10%; animation-delay: 0s;">🚀</div>
+        <div class="floating-icon" style="left: 20%; animation-delay: 2s;">🤖</div>
+        <div class="floating-icon" style="left: 30%; animation-delay: 4s;">🌱</div>
+        <div class="floating-icon" style="left: 40%; animation-delay: 6s;">📱</div>
+        <div class="floating-icon" style="left: 50%; animation-delay: 8s;">🔬</div>
+        <div class="floating-icon" style="left: 60%; animation-delay: 10s;">⚡</div>
+        <div class="floating-icon" style="left: 70%; animation-delay: 12s;">🎯</div>
+        <div class="floating-icon" style="left: 80%; animation-delay: 14s;">💡</div>
+        <div class="floating-icon" style="left: 90%; animation-delay: 16s;">🎨</div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Project Demos/ MVP Links & Explanations: Rural Innovation Track [Hack4Nature, IITM] 🚀</h1>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="project-card">
+            <div class="category-badge">Agriculture Robotics</div>
+            <div class="project-content">
+                <div class="project-description">
+                    <div class="project-title">🤖 SLAMbots: Autonomous Agricultural Fleet 🚜</div>
+                    
+                    <p>We developed a simulation for a fleet of <strong>SLAM-enabled agricultural robots (Slambots)</strong> to enhance farm supervision through distributed monitoring and autonomous navigation.</p>
+                    
+                    <div class="separator"></div>
+                    
+                    <h3>🌐 Simulation & Web App Focus</h3>
+                    
+                    <p>We simulated fleet behavior in <strong>Webots</strong> 🖥️ with sensor-based data generation.</p>
+                    
+                    <p>Our focus was to develop a web app for a fleet of Slambots that can:</p>
+                    <ul>
+                        <li><strong>Navigate:</strong> Use SLAM for large farmlands 🗺️.</li>
+                        <li><strong>Distributed Monitoring:</strong> Collect & analyze soil moisture 💧, temperature 🌡️, and crop health 🌱.</li>
+                        <li><strong>Adaptive Collaboration:</strong> Share data for optimized task distribution 🤝.</li>
+                        <li><strong>Fail-Safe Operations:</strong> Handle sensor failures 🚫, communication delays ⏳, and power constraints 🔋.</li>
+                        <li><strong>Remote Supervision:</strong> Enable farmer monitoring via a web/mobile interface 📱.</li>
+                    </ul>
+                    
+                    <div class="separator"></div>
+                    
+                    <h3>Constraints Handled 🚧</h3>
+                    <ul>
+                        <li><strong>Limited Communication:</strong> Predictive decision-making required 📡.</li>
+                        <li><strong>Low-Power Optimization:</strong> Minimize energy consumption ⚡.</li>
+                        <li><strong>Sensor Failures & Redundancy:</strong> Handle dropouts/inaccuracies 📉.</li>
+                        <li><strong>Localization Without GPS:</strong> Alternative mapping techniques 📍.</li>
+                        <li><strong>Multi-Robot Coordination:</strong> Optimize fleet-wide task execution 🔄.</li>
+                    </ul>
+                </div>
+                <div class="demo-section">
+                    <div class="avatar-container">
+                        <div class="avatar">🎬</div>
+                    </div>
+                    <h3>Working Prototype:</h3>
+                    <h3>Demo Video (Uzhavar's Connect) ▶️:</h3>
+                    <a href="https://drive.google.com/file/d/13-fs1ZowVl1FC-iuFHti1M-qPBbcU8bn/view?usp=sharing" class="demo-link" target="_blank">
+                        🎥 Watch Demo Video
+                    </a>
+                    <br>
+                    <a href="https://preview--rover-path-visualizer-sim-46.lovable.app/" class="mvp-link" target="_blank">
+                        🌐 MVP/Working Prototype Live Hosted Link
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="category-badge">Smart Farming Assistant</div>
+            <div class="project-content">
+                <div class="project-description">
+                    <div class="project-title">Multiple Cropping patterns (Video demo):</div>
+                    
+                    <p>Develop a smart farming assistant that provides real-time, AI-driven crop management insights, handling multiple cropping pattern simulations.</p>
+                    
+                    <h3>Key Features that we handled:</h3>
+                    <ul>
+                        <li>Analyze Soil Health & Weather using preloaded Soil Health Card datasets and weather APIs to provide irrigation and sowing suggestions.</li>
+                        <li>AI-based pest and disease detection using sample images.</li>
+                        <li>Fertilizer and pesticide recommendations based on crop type and soil condition.</li>
+                        <li>Simple interface for easy farmer access.</li>
+                    </ul>
+                </div>
+                <div class="demo-section">
+                    <div class="avatar-container">
+                        <div class="avatar">🌾</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1ii_-AuKqqPsEYX_1BzR8EIqjyMR7fqTt/view?usp=sharing" class="demo-link" target="_blank">
+                        🎥 Watch Demo Video
+                    </a>
+                    <br>
+                    <a href="https://crop-sim-dynamic-advisor-58.lovable.app/" class="mvp-link" target="_blank">
+                        🌐 MVP/Working Prototype Live Hosted Link
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="category-badge">Integrated Agricultural System</div>
+            <div class="project-content">
+                <div class="project-description">
+                    <div class="project-title">Smart Agricultural Monitoring & Crop Management System using IoT, Computer Vision, YOLO, Deep Learning, Robotics, NLP, Flask, React & Capacitor (Video Demo) <strong>(with Solidworks simulation software)</strong>:</div>
+                    
+                    <p>• Developed an integrated solution using IoT sensors, Computer Vision, and Deep Learning (YOLO) for real-time crop disease detection, weed identification, and pest monitoring in TN Specific Crops such as Sugarcane, Mango, Coconut & Paddy.</p>
+                    
+                    <p>• Engineered a multi-terrain robotic system combining land rover, aerial drones for pesticide spraying, and an amphibious hydro vehicle fitted with custom-trained ML models & Sensors for comprehensive field monitoring in Dense, Aquatic & Sparse vegetations.</p>
+                    
+                    <p>• Implemented automated alarming systems that notify farmers of detected issues through SMS and mobile app notifications, handled through Twilio API.</p>
+                    
+                    <p>• Created a Multilingual Multimodal conversational AI Chatbot using ElevanLabs & Vapi to assist farmers with crop management decisions, which is accessible in regional languages to improve agricultural knowledge sharing.</p>
+                    
+                    <p>• Designed a user-friendly dashboard displaying analytical insights, predictive crop health metrics, and recommended interventions.</p>
+                </div>
+                <div class="demo-section">
+                    <div class="avatar-container">
+                        <div class="avatar">🔬</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/16eeLnnwsqkp_wwrDC6XPq1ZOI1Wf-eMr/view" class="demo-link" target="_blank">
+                        🎥 Watch Demo Video
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="category-badge">Rural Education</div>
+            <div class="project-content">
+                <div class="project-description">
+                    <div class="project-title">AI-Enhanced Smart Boards for Rural Education</div>
+                    
+                    <p>To enhance rural education, we add interactive AI enabled smart boards.</p>
+                    
+                    <p>Check the demo video:</p>
+                </div>
+                <div class="demo-section">
+                    <div class="avatar-container">
+                        <div class="avatar">📚</div>
+                    </div>
+                    <a href="https://github.com/user-attachments/assets/abafd451-3c4e-4647-86fb-741e86a1a053" class="demo-link" target="_blank">
+                        🎥 Watch Demo Video
+                    </a>
+                    <br>
+                    <a href="https://calc-fe.vercel.app/" class="mvp-link" target="_blank">
+                        🌐 MVP/Working Prototype Live Hosted Link
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="category-badge">Fleet Simulation</div>
+            <div class="project-content">
+                <div class="project-description">
+                    <div class="project-title">Fleet Simulation of SLAMbots using Webots Software, KiCad, ThingSpeak, Blynk Console, Ansys</div>
+                    
+                    <p>Advanced fleet simulation system for autonomous agricultural robots using comprehensive simulation and monitoring tools.</p>
+                    
+                    <h3>Key Technologies:</h3>
+                    <ul>
+                        <li><strong>Webots Software:</strong> Physics-based 3D simulation environment for robot behavior modeling</li>
+                        <li><strong>KiCad:</strong> Electronic design automation for circuit design and PCB layout</li>
+                        <li><strong>ThingSpeak:</strong> IoT analytics platform for data collection and visualization</li>
+                        <li><strong>Blynk Console:</strong> Mobile and web dashboard for remote monitoring and control</li>
+                        <li><strong>Ansys:</strong> Engineering simulation software for structural and thermal analysis</li>
+                    </ul>
+                </div>
+                <div class="demo-section">
+                    <div class="avatar-container">
+                        <div class="avatar">🤖</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1DFHANhA7BfMKR7YNZim-a650Ub44NO86/view?usp=sharing" class="demo-link" target="_blank">
+                        🎥 Watch Demo Video
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="category-badge">Healthcare Management</div>
+            <div class="project-content">
+                <div class="project-description">
+                    <div class="project-title">A'arogyaX: AI-Powered Resilient & Adaptive Healthcare Management System</div>
+                    
+                    <p>Developed AI agent based doctor appointment booking & scheduling system with priority scheduling algorithms for emergency cases and QR-based/biometric prepaid payment systems for efficient and faster receipt generation to avoid queues, aiding with financial assistance options such as loan/installment, collateral guarantees for rural patients who can't afford the fee of a surgery in that moment.</p>
+                    
+                    <p>Implemented blockchain based disaster-resilient supply chain analyzing some of the shortest path graph traversal algorithms, ranging from BFS, DFS, PRIMS, KRUSKAL, MST, RRT, RRT*, DIJKSTRA, A* - all compared & plotted on a 3D cross section Map using gmaps & places API, with real time satellite view using zoom earth and GEE, with digital twin simulation for contingency planning and alternative routing during disruptions, monitoring end-to-end supply chain from production to delivery.</p>
+                    
+                    <p>Created Doctor's PA chatbot as a conversational multimodal multilingual assistant integrating OCR models such as small docling & mistral large 7b for understanding Doctor's Handwriting and leveraging existing medical LLMs such as Google's MedPalm, MedLM, BcpMLP, PubMed and Microsoft's Dragon Copilot for schedule management, automated non workflows with Google Calendar API for checking appointment schedules, and inventory management to check medicine stock availability for prescriptions.</p>
+                </div>
+                <div class="demo-section">
+                    <div class="avatar-container">
+                        <div class="avatar">🏥</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1kaLca0vBg13Tqj77_djH1oaPVgsiE6Cz/view?usp=sharing" class="demo-link" target="_blank">
+                        🎥 Watch Demo Video
+                    </a>
+                    <br>
+                    <a href="https://preview--med-transit-guardian-3d-87.lovable.app/supply-chain" class="mvp-link" target="_blank">
+                        🌐 MVP/Working Prototype Live Hosted Link
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="category-badge">Sign Language Translation</div>
+            <div class="project-content">
+                <div class="project-description">
+                    <div class="project-title">LINGUA: Sign Language Converter for the Deaf and Hard of Hearing Community</div>
+                    
+                    <p>Developed a comprehensive Multimodal solution that translates Indian Sign Language (ISL) into Multilingual text, speech (regional languages) integrating Sarvam AI & gTTS, images, and video in real-time using landmark pose estimation and motion recognition techniques.</p>
+                    
+                    <p>Implemented real-time voice cloning with lip synced Avatar Clones that handle Hierarchical prosody modeling in Speech Synthesis and Morse code integration to enhance communication options for deaf and hard-of-hearing individuals.</p>
+                    
+                    <p>Created educational gesture-based games using Computer Vision to teach sign language fundamentals to younger users, increasing accessibility and engagement from a younger age understanding the importance of gestures, so that they need not feel alienated from the society.</p>
+                    
+                    <p>Engineered specialized hardware including sensor-equipped gloves for the elderly and paralyzed, that is capable of detecting finger bend movements and mapping them to common phrases like "restroom," "food," and "sleep", notifying the guardian.</p>
+                    
+                    <p>Designed assistive technologies including eye-gaze controlled keyboards and gesture-based menu ordering systems to support elderly and paralyzed individuals.</p>
+                    
+                    <p>Developed domain-specific sign language representations for railway announcements, healthcare, fintech, agriculture, everyday educational terms, sports, food sector, rhymes & storytelling for children and legal terminology using 3D blender avatars and stick figure animations.</p>
+                </div>
+                <div class="demo-section">
+                    <div class="avatar-container">
+                        <div class="avatar">🤟</div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1R5KXyUDs2mHQ1Ve0-b8ZlofxfY8GcR6G/view?usp=sharing" class="demo-link" target="_blank">
+                        🎥 Watch Demo Video
+                    </a>
+                    <br>
+                    <a href="https://sign-kit.vercel.app/sign-kit/learn-sign" class="mvp-link" target="_blank">
+                        🌐 MVP/Working Prototype Live Hosted Link
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add dynamic interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate cards on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                    }
+                });
+            });
+
+            // Add more floating icons randomly
+            function createFloatingIcon() {
+                const icons = ['🚀', '🤖', '🌱', '📱', '🔬', '⚡', '🎯', '💡', '🎨', '🌟', '⭐', '💫'];
+                const icon = document.createElement('div');
+                icon.className = 'floating-icon';
+                icon.textContent = icons[Math.floor(Math.random() * icons.length)];
+                icon.style.left = Math.random() * 100 + '%';
+                icon.style.animationDuration = (Math.random() * 10 + 15) + 's';
+                icon.style.animationDelay = Math.random() * 5 + 's';
+                
+                document.querySelector('.floating-icons').appendChild(icon);
+                
+                setTimeout(() => {
+                    icon.remove();
+                }, 25000);
+            }
+
+            // Create floating icons periodically
+            setInterval(createFloatingIcon, 3000);
+
+            // Add hover effects to demo links
+            const demoLinks = document.querySelectorAll('.demo-link, .mvp-link');
+            demoLinks.forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.1) rotateZ(' + (Math.random() * 10 - 5) + 'deg)';
+                });
+                
+                link.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1) rotateZ(0deg)';
+                });
+            });
+
+            // Add parallax effect to avatars
+            document.addEventListener('mousemove', function(e) {
+                const avatars = document.querySelectorAll('.avatar');
+                const x = e.clientX / window.innerWidth;
+                const y = e.clientY / window.innerHeight;
+                
+                avatars.forEach(avatar => {
+                    const moveX = (x - 0.5) * 20;
+                    const moveY = (y - 0.5) * 20;
+                    avatar.style.transform = `translate(${moveX}px, ${moveY}px) rotate(${moveX}deg)`;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
