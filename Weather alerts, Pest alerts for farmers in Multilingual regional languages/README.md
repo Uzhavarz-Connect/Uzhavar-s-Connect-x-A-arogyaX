@@ -1,1 +1,1 @@
-we use openweather map api, gmaps & places api, sarvam api, gTTS, kokoro TTS, Whisper to deliver a rich experience for the farmers, making it easier for them to understand
+we use openweather map api, gmaps & places api, sarvam api, gTTS, kokoro TTS, Whisper to deliver a rich experience for the farmers, analysing soil card datasets of dem & raster files analysing climatic parameters in the AI model, thereby making it easier for them to understand with alerts sent through sendgrid, twilio and vapi notifications, sms & caller agents
