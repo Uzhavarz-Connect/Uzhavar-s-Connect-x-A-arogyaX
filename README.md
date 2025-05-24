@@ -135,12 +135,14 @@ Pest detection (thermal imaging/ heatmap density)
 -
 <br/>
 <br/>
+
 ![image](https://github.com/user-attachments/assets/227ade90-e53b-43e3-b8a6-015b1c90de61)
 
 Weed detection
 -
 <br/>
 <br/>
+
 ![image](https://github.com/user-attachments/assets/a1f678b0-8d7d-4974-a30b-7b76dd7469e6)
 
 
