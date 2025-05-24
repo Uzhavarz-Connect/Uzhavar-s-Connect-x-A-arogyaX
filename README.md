@@ -3,7 +3,15 @@
 ## Project Demo Videos/ MVP Showcase (live hosted)/ Prototype Simulations/ 
 
 https://uzhavars-connect-project-demo.netlify.app/
+-
 
+🎯All the prototype links, MVPs, Demo Videos, Simulations (Solidworks, Webots, SLAM Visualization) & their explanations are provided in the above link
+
+
+<br/>
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
@@ -89,28 +97,68 @@ Our AI-driven platform is making a tangible difference across agriculture 🌱 a
 This platform demonstrates how advanced AI technologies can deliver practical, accessible solutions to fundamental challenges in agriculture and healthcare, with a strong focus on empowering rural and underserved populations. 🌟
 
 ## A'arogyaX
+<br/>
+<br/>
 
 ![image](https://github.com/user-attachments/assets/ba4cacb0-8876-4bc9-b63d-bb73decb3757)
 
 ![image](https://github.com/user-attachments/assets/822c2784-0990-4440-8f6b-d86d3ae87d3f)
 
 ## Implementation
+<br/>
+<br/>
+<br/>
 
 ![image](https://github.com/user-attachments/assets/d988511a-3211-4d89-9c39-8f5f585d7655)
 
 ![image](https://github.com/user-attachments/assets/71902bec-cf35-43c0-9574-86355a09a12a)
 
-## Computer Vision Prototype Screenshots (Dataset created with self annotation on RoboFlow, achieving an accuracy of 98%)
+## Computer Vision (YOLO /Deep Learning) Prototype Screenshots (Dataset created with self annotation on RoboFlow, achieving an accuracy of 98%)
+<br/>
+<br/>
 
 ![image](https://github.com/user-attachments/assets/ddb2176d-8796-4623-857d-a2f425ae8518)
+
+![image](https://github.com/user-attachments/assets/d8318786-b7ad-4db9-823c-c7a440b37a3e)
+
+
+Leaf level stem level disease detection using highly accurate self annotated yolo models on mango & coconut (roboflow datasets) - powdery mildew & stem bleeding
+-
+<br/>
+<br/>
+![image](https://github.com/user-attachments/assets/e068c294-2a93-408b-a220-60dd71618cb5)
+
+![image](https://github.com/user-attachments/assets/f3694d9e-ef13-49ea-a7fa-3c1bad9798c1)
+
+
+Pest detection (thermal imaging/ heatmap density)
+-
+<br/>
+<br/>
+![image](https://github.com/user-attachments/assets/227ade90-e53b-43e3-b8a6-015b1c90de61)
+
+Weed detection
+-
+<br/>
+<br/>
+![image](https://github.com/user-attachments/assets/a1f678b0-8d7d-4974-a30b-7b76dd7469e6)
+
+
+
+
 
 ![image](https://github.com/user-attachments/assets/8314068a-be08-4d52-9629-df4410f1fd41) 
 
 (https://colab.research.google.com/drive/1GeSfFSAhY1nRbtyw9RwzRfoibX0S7DuG?usp=sharing)
 
 <br/>
+<br/>
+<br/>
 
 ## Effective path planning graph traversal algorithms for optimization (shortest path, better crop yield, profitable return on investment)
+
+<br/>
+<br/>
 
 We actively analysed several graph algorithms and compared them all for better yield in each scenario, ranging from A*, Dijkstra, BFS, DFS, Prims, Kruskal, MST, Bellman Ford, Floyd Warshall, RRT, RRT*, Ford Fulkerson, Flow algorithms
 
@@ -125,6 +173,8 @@ We actively analysed several graph algorithms and compared them all for better y
 (https://colab.research.google.com/drive/1DQKrrcs56zmkRK0Dd6gD3AoPBZRWY_su?usp=sharing)
 
 <br/>
+<br/>
+<br/>
 
 We also ran several RL Based pipeline heirarchial Span of swarm algorithms in population density analysis in diversying farm yield autonomously
 
@@ -138,6 +188,8 @@ We also ran several RL Based pipeline heirarchial Span of swarm algorithms in po
 
 We also deployed smart irrigation systems, digital twins to continuously monitor crop health & pest action
 <br/>
+<br/>
+<br/>
 
 We also simulated a fleet of pesticide spraying drones & refill mechanism of the fuel deliverables (food, in case of disaster/emergency) using backtracking algorithms
 
@@ -148,10 +200,15 @@ We also simulated a fleet of pesticide spraying drones & refill mechanism of the
 ![image](https://github.com/user-attachments/assets/cef5c9b0-65de-4878-9e5b-ff28be9ca284)
 
 Pest action
+-
+<br/>
+<br/>
 <br/>
 ![image](https://github.com/user-attachments/assets/37e759b6-1d7b-4167-8fae-a0614bc0728b)
 
 multiple cropping patterns, crop yield comparisons, advantages & disadvantages
+<br/>
+<br/>
 <br/>
 
 ![image](https://github.com/user-attachments/assets/a6be84a0-13b2-4bae-8be2-e9d0483e0086)
@@ -161,6 +218,8 @@ multiple cropping patterns, crop yield comparisons, advantages & disadvantages
 
 
 We also leveraged Multilingual Multimodal Kissan AI, the ai chatbot developed by govt of India, in assosciation with AIkosha platform to clarify any queries related to agritech, from soil temperature levels, humidty, wind pressure, pH, climatic requirements, moisture content, etc.
+<br/>
+<br/>
 
 ![image](https://github.com/user-attachments/assets/13b84b5b-6dde-4a6b-ac78-1f6fada8b7b8)
 
@@ -169,16 +228,26 @@ We also leveraged Multilingual Multimodal Kissan AI, the ai chatbot developed by
 
 
 ## Techstack
+<br/>
+<br/>
 
 ![image](https://github.com/user-attachments/assets/4e0020ba-b4f3-4b1a-8f69-e551b5b3e606)
 
 ## Future Aspect
-
+<br/>
+<br/>
 We designed a smart glove that's capable to detecting gestures using flex sensors, for the elderly & paralysed people
 
 ![image](https://github.com/user-attachments/assets/14a2b7f2-aeba-4b47-8359-d9dd092688fd)
 
 We've prototyped a blockchain based crowdfunding Dapp to facilitate donation of blood, money, clothes, food, tablets, etc. to those who suffer in rural areas out of poverty, we also aim to create employment opportunities, as the system carries potential to deliver remote jobs to the unemployed (eg: delivery work of medicines to a particular location) and by going onchain, you personal confidential data is kept secure & private, with no unauthorized access, we can deploy a federated model with multifactor authentication
+
+![image](https://github.com/user-attachments/assets/1ffaa2a8-4b18-426a-a951-01afb2f71eb7)
+
+![image](https://github.com/user-attachments/assets/524a4a10-c1ab-4168-bab8-aae3bdd3f575)
+
+![image](https://github.com/user-attachments/assets/c05cd101-ef72-4c1b-bc66-0e2afb14102b)
+
 
 ![image](https://github.com/user-attachments/assets/f50587dd-908c-41d3-9a41-28ffc5b02e14)
 
