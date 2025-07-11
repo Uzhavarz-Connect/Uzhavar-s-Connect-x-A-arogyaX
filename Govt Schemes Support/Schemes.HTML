@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Scheme Navigator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2E7D32 0%, #66BB6A 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .profile-section, .scheme-section {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-section h2, .scheme-section h2 {
+            color: #2E7D32;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #2E7D32;
+        }
+
+        .scheme-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .scheme-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #2E7D32;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .scheme-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .scheme-card h3 {
+            color: #2E7D32;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .scheme-card p {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .eligibility-badge {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .eligible {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .not-eligible {
+            background: #f44336;
+            color: white;
+        }
+
+        .yes-eligible {
+            background: #ff9800;
+            color: white;
+        }
+
+        .documents-list {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .documents-list h4 {
+            color: #1976d2;
+            margin-bottom: 10px;
+        }
+
+        .documents-list ul {
+            list-style: none;
+        }
+
+        .documents-list li {
+            padding: 5px 0;
+            border-bottom: 1px solid #bbdefb;
+        }
+
+        .documents-list li:last-child {
+            border-bottom: none;
+        }
+
+        .btn {
+            background: #2E7D32;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #1B5E20;
+        }
+
+        .chatbot-section {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .chat-container {
+            height: 300px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            overflow-y: auto;
+            padding: 15px;
+            background: #f9f9f9;
+            margin-bottom: 15px;
+        }
+
+        .chat-message {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 8px;
+            max-width: 80%;
+        }
+
+        .user-message {
+            background: #2E7D32;
+            color: white;
+            margin-left: auto;
+        }
+
+        .bot-message {
+            background: #e8f5e8;
+            color: #333;
+        }
+
+        .chat-input {
+            display: flex;
+            gap: 10px;
+        }
+
+        .chat-input input {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .scheme-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌾 Farmer Scheme Navigator</h1>
+            <p>Simple Guide to Government Schemes for Farmers</p>
+        </div>
+
+        <div class="main-content">
+            <div class="profile-section">
+                <h2>👤 Your Profile</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="state">State:</label>
+                    <select id="state">
+                        <option value="">Select State</option>
+                        <option value="andhra-pradesh">Andhra Pradesh</option>
+                        <option value="tamil-nadu">Tamil Nadu</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="telangana">Telangana</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="haryana">Haryana</option>
+                        <option value="uttar-pradesh">Uttar Pradesh</option>
+                        <option value="bihar">Bihar</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="land-size">Land Size (Acres):</label>
+                    <input type="number" id="land-size" placeholder="Enter land size">
+                </div>
+                <div class="form-group">
+                    <label for="annual-income">Annual Income (₹):</label>
+                    <input type="number" id="annual-income" placeholder="Enter annual income">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <label for="crop-type">Main Crop:</label>
+                    <select id="crop-type">
+                        <option value="">Select Crop</option>
+                        <option value="rice">Rice</option>
+                        <option value="wheat">Wheat</option>
+                        <option value="sugarcane">Sugarcane</option>
+                        <option value="cotton">Cotton</option>
+                        <option value="maize">Maize</option>
+                        <option value="vegetables">Vegetables</option>
+                        <option value="fruits">Fruits</option>
+                        <option value="pulses">Pulses</option>
+                    </select>
+                </div>
+                <button class="btn" onclick="checkEligibility()">Check My Eligibility</button>
+            </div>
+
+            <div class="scheme-section">
+                <h2>🎯 Available Schemes</h2>
+                <div class="scheme-grid" id="schemes-container">
+                    <!-- Schemes will be populated here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="chatbot-section">
+            <h2>💬 Ask Questions</h2>
+            <div class="chat-container" id="chat-container">
+                <div class="chat-message bot-message">
+                    Hello! I'm here to help you with government schemes. You can ask me about:
+                    <br>• Eligibility requirements
+                    <br>• Required documents
+                    <br>• How to apply
+                    <br>• Scheme benefits
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Type your question here..." onkeypress="handleChatEnter(event)">
+                <button class="btn" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const schemes = [
+            {
+                name: "PM-KISAN",
+                fullName: "Pradhan Mantri Kisan Samman Nidhi",
+                description: "₹6,000 per year direct cash transfer to farmers",
+                eligibility: { landSize: 5, income: 200000 },
+                documents: ["Aadhaar Card", "Bank Account Details", "Land Records", "Identity Proof"],
+                benefits: "₹2,000 every 4 months (₹6,000/year)",
+                applicationLink: "https://pmkisan.gov.in/"
+            },
+            {
+                name: "PMFBY",
+                fullName: "Pradhan Mantri Fasal Bima Yojana",
+                description: "Crop insurance scheme protecting farmers from crop loss",
+                eligibility: { landSize: 10, income: 300000 },
+                documents: ["Aadhaar Card", "Bank Account", "Land Records", "Sowing Certificate"],
+                benefits: "Insurance coverage up to ₹2 lakh per hectare",
+                applicationLink: "https://pmfby.gov.in/"
+            },
+            {
+                name: "PMKSY",
+                fullName: "Pradhan Mantri Krishi Sinchayee Yojana",
+                description: "Irrigation support including drip and sprinkler systems",
+                eligibility: { landSize: 2, income: 250000 },
+                documents: ["Land Records", "Aadhaar Card", "Bank Account", "Water Source Certificate"],
+                benefits: "Up to 55% subsidy on irrigation equipment",
+                applicationLink: "https://pmksy.gov.in/"
+            },
+            {
+                name: "KCC",
+                fullName: "Kisan Credit Card",
+                description: "Easy credit facility for farmers at low interest rates",
+                eligibility: { landSize: 1, income: 150000 },
+                documents: ["Aadhaar Card", "PAN Card", "Land Records", "Bank Account"],
+                benefits: "Credit up to ₹3 lakh at 4% interest",
+                applicationLink: "https://www.sbi.co.in/web/agri-rural"
+            },
+            {
+                name: "SMAM",
+                fullName: "Sub-Mission on Agricultural Mechanization",
+                description: "Financial assistance for buying farm equipment",
+                eligibility: { landSize: 3, income: 300000 },
+                documents: ["Aadhaar Card", "Bank Account", "Land Records", "Quotation for Equipment"],
+                benefits: "25-50% subsidy on agricultural machinery",
+                applicationLink: "https://agrimachinery.nic.in/"
+            },
+            {
+                name: "PM Kisan Maan Dhan",
+                fullName: "PM Kisan Maan Dhan Yojana",
+                description: "Old age pension scheme for small and marginal farmers",
+                eligibility: { landSize: 2, income: 150000, age: 60 },
+                documents: ["Aadhaar Card", "Bank Account", "Land Records", "Age Proof"],
+                benefits: "₹3,000 monthly pension after 60 years",
+                applicationLink: "https://maandhan.in/"
+            }
+        ];
+
+        function checkEligibility() {
+            const landSize = parseFloat(document.getElementById('land-size').value) || 0;
+            const income = parseFloat(document.getElementById('annual-income').value) || 0;
+            const age = parseInt(document.getElementById('age').value) || 0;
+            const state = document.getElementById('state').value;
+            const name = document.getElementById('name').value;
+
+            if (!landSize || !income || !age || !state || !name) {
+                alert('Please fill all the details to check eligibility');
+                return;
+            }
+
+            displaySchemes(landSize, income, age, state);
+        }
+
+        function displaySchemes(landSize, income, age, state) {
+            const container = document.getElementById('schemes-container');
+            container.innerHTML = '';
+
+            schemes.forEach(scheme => {
+                const isEligible = checkSchemeEligibility(scheme, landSize, income, age);
+                const schemeCard = createSchemeCard(scheme, isEligible);
+                container.appendChild(schemeCard);
+            });
+        }
+
+        function checkSchemeEligibility(scheme, userLandSize, userIncome, userAge) {
+            let eligible = true;
+            let reason = '';
+
+            if (scheme.eligibility.landSize && userLandSize > scheme.eligibility.landSize) {
+                eligible = false;
+                reason = 'Land size exceeds limit';
+            }
+            
+            if (scheme.eligibility.income && userIncome > scheme.eligibility.income) {
+                eligible = false;
+                reason = 'Income exceeds limit';
+            }
+
+            if (scheme.eligibility.age && userAge < scheme.eligibility.age) {
+                return { status: 'not-eligible', reason: 'Age requirement not met' };
+            }
+
+            if (eligible) {
+                return { status: 'eligible', reason: 'All conditions met' };
+            } else {
+                return { status: 'yes-eligible', reason: reason };
+            }
+        }
+
+        function createSchemeCard(scheme, eligibility) {
+            const card = document.createElement('div');
+            card.className = 'scheme-card';
+            
+            card.innerHTML = `
+                <div class="eligibility-badge ${eligibility.status}">${eligibility.status.replace('-', ' ').toUpperCase()}</div>
+                <h3>${scheme.name}</h3>
+                <p><strong>${scheme.fullName}</strong></p>
+                <p>${scheme.description}</p>
+                <p><strong>Benefits:</strong> ${scheme.benefits}</p>
+                <div class="documents-list">
+                    <h4>Required Documents:</h4>
+                    <ul>
+                        ${scheme.documents.map(doc => `<li>• ${doc}</li>`).join('')}
+                    </ul>
+                </div>
+                <button class="btn" onclick="window.open('${scheme.applicationLink}', '_blank')">Apply Now</button>
+            `;
+
+            return card;
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('chat-input');
+            const message = input.value.trim();
+            
+            if (message) {
+                addMessage(message, 'user');
+                input.value = '';
+                
+                // Simulate bot response
+                setTimeout(() => {
+                    const response = getBotResponse(message);
+                    addMessage(response, 'bot');
+                }, 1000);
+            }
+        }
+
+        function handleChatEnter(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+
+        function addMessage(message, sender) {
+            const chatContainer = document.getElementById('chat-container');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `chat-message ${sender}-message`;
+            messageDiv.textContent = message;
+            chatContainer.appendChild(messageDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        function getBotResponse(message) {
+            const lowerMessage = message.toLowerCase();
+            
+            if (lowerMessage.includes('pm-kisan') || lowerMessage.includes('cash transfer')) {
+                return "PM-KISAN provides ₹6,000 yearly to farmers with up to 5 acres land. You need Aadhaar card, bank account, and land records to apply.";
+            } else if (lowerMessage.includes('insurance') || lowerMessage.includes('crop loss')) {
+                return "PMFBY provides crop insurance. Premium is just 2% for Kharif crops. It covers natural disasters and crop loss.";
+            } else if (lowerMessage.includes('irrigation') || lowerMessage.includes('drip')) {
+                return "PMKSY offers up to 55% subsidy on drip irrigation systems. Minimum 2 acres land required. Apply through state agriculture department.";
+            } else if (lowerMessage.includes('credit') || lowerMessage.includes('loan')) {
+                return "Kisan Credit Card provides loans up to ₹3 lakh at 4% interest. Apply at any bank with land records and Aadhaar card.";
+            } else if (lowerMessage.includes('documents')) {
+                return "Common documents needed: Aadhaar card, bank account details, land records, and identity proof. Some schemes may need additional documents.";
+            } else {
+                return "I can help you with PM-KISAN, crop insurance, irrigation subsidies, credit facilities, and document requirements. Please ask specific questions about these schemes.";
+            }
+        }
+
+        // Initialize with some sample schemes displayed
+        window.onload = function() {
+            displaySchemes(5, 200000, 45, 'tamil-nadu');
+        };
+    </script>
+</body>
+</html>
